@@ -11,6 +11,7 @@
 		<div class="estilo">
 			<h1>Talento Digital</h1>
 			<a href="https://dvirtual.cl/">Pagina de Inicio DUCO UC</a>
+			<div><p>El ancho de tu pantalla es de :</p><span id="span"></span><p>tu navegador es :</p><span id="spanDos"></span></div>
 		</div>
 		<div>
 		<h2>Página de práctica mientras comienza el curso</h2>
@@ -46,20 +47,25 @@
 	<script>
 	console.log(window)	
 	let box = document.getElementById("boxOne");
+	let span = document.getElementById("span")
+	let span2 = document.getElementById("spanDos")
 	console.log(box)
 	console.log(innerWidth)
 
-	function write (text){
+	function write (text, id){
 		let parrafo = document.createElement('p')
 		let newText = document.createTextNode(text)
 		parrafo.appendChild(newText)
-		box.appendChild(parrafo)
+		id.appendChild(parrafo)
 
 	}
 	//Recorriedno objeto windows 
 	for(var item in window){
-		write(item)
+		write(item,box)
 	}
+write(innerWidth,span)
+write(navigator.userAgent, span2)
+console.log(navigator)
 	</script>
 
 </html>
