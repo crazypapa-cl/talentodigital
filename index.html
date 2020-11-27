@@ -32,9 +32,34 @@
 			<ul><li> <a href="https://elevaciondigital.pe/wp-content/uploads/2019/06/El-gran-libro-de-HTML5-CSS3-y-JavaScript.pdf">Libro de HTML CSS3 y JavaScrip</a></li></ul>
 			
 		</section>
+		<div>
+			<h2>Desmenuzando el Objeto Windos Con js </h2>
+			<p>Aporte x Leandro Venegas </p>
+			<section id="boxOne">
+
+			</section>
+		</div>
 		<!--<footer><p>que alguien quite la alerta del comienzo esta super fea</p></footer>-->
 		<!--<script>alert("hola terricolas, esta es la pagina de Los Cabros y cabras de Talento Digital el grupo de Whatsapp")</script>-->
-	</body>
 	</div>
+	</body>
+	<script>
+	console.log(window)	
+	let box = document.getElementById("boxOne");
+	console.log(box)
+	console.log(innerWidth)
+
+	function write (text){
+		let parrafo = document.createElement('p')
+		let newText = document.createTextNode(text)
+		parrafo.appendChild(newText)
+		box.appendChild(parrafo)
+
+	}
+	//Recorriedno objeto windows 
+	for(var item in window){
+		write(item)
+	}
+	</script>
 
 </html>
