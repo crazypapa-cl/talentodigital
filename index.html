@@ -8,16 +8,36 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div class="estilo">
+		<div class="agrupar">
+			<small>El ancho de tu pantalla es de :</small><small id="span"></small><small>  px</small>
+			<header class="estilo">
 			<h1>Talento Digital</h1>
-			<a href="https://dvirtual.cl/">Pagina de Inicio DUCO UC</a>
-			<div><p>El ancho de tu pantalla es de :</p><span id="span"></span><p>tu navegador es :</p><span id="spanDos"></span></div>
-		</div>
-		<div>
-		<h2>Página de práctica mientras comienza el curso</h2>
-		<p>Todos pueden cooperar y crear esta página, como ven está en los comienzos</p>
-		<p>tienen la libertad de hacer lo que quieran con esta página, pueden crear un link a una página personal o inventar algo</p>
-</div>
+		<a href="https://dvirtual.cl/">Pagina de Inicio DUCO UC</a>
+		
+		</header>
+		<nav class="nav">
+			<ul class="menu">
+				
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JS</li>
+			</ul>
+		</nav>
+		<section class="co1"><p>tu navegador es :</p>
+			<span id="spanDos">
+			</span>
+			<h2>Página de práctica mientras comienza el curso</h2>
+			<p>Todos pueden cooperar y crear esta página,</p>
+			<p>tienen la libertad de hacer lo que quieran con esta página, pueden crear un link a una página personal o inventar algo</p>
+		</section>
+			<aside class="window">
+			<header class="cabeza">
+				<h2>Desmenuzando el Objeto Windos Con js </h2>
+				<p>Aporte x Leandro Venegas </p>
+			</header>	
+				<section id="boxOne">
+			</section>
+		</aside>
 		<section>
 			<header>
 			<h3>Links de estudios compartidos en el grupo</h3>
@@ -26,20 +46,9 @@
 			<ul><li><a href="https://ed.team/cursos/web ">La ruta del desarrollador web ED TEAM</a></li></ul>
 			<ul><li><a href="https://youtu.be/rbuYtrNUxg4 ">Curso de HTML para principiantes</a></li></ul>
 			<ul><li><a href="https://misapuntesdigitales.com/nociones-basicas-de-javascript/">Nociones basicas de Java Scrip </a></li></ul>
-			
 			<ul><li><a href="http://www.jovenesprogramadores.cl">Cursos gratuito del gobierno programación </a></li></ul>
-			
-			
 			<ul><li> <a href="https://elevaciondigital.pe/wp-content/uploads/2019/06/El-gran-libro-de-HTML5-CSS3-y-JavaScript.pdf">Libro de HTML CSS3 y JavaScrip</a></li></ul>
-			
 		</section>
-		<div>
-			<h2>Desmenuzando el Objeto Windos Con js </h2>
-			<p>Aporte x Leandro Venegas </p>
-			<section id="boxOne">
-
-			</section>
-		</div>
 		<!--<footer><p>que alguien quite la alerta del comienzo esta super fea</p></footer>-->
 		<!--<script>alert("hola terricolas, esta es la pagina de Los Cabros y cabras de Talento Digital el grupo de Whatsapp")</script>-->
 	</div>
@@ -52,8 +61,8 @@
 	console.log(box)
 	console.log(innerWidth)
 
-	function write (text, id){
-		let parrafo = document.createElement('p')
+	function write (text, id, p){
+		let parrafo = document.createElement(p)
 		let newText = document.createTextNode(text)
 		parrafo.appendChild(newText)
 		id.appendChild(parrafo)
@@ -61,7 +70,7 @@
 	}
 	//Recorriedno objeto windows 
 	for(var item in window){
-		write(item,box)
+		write(item,box,"p")
 	}
 write(innerWidth,span)
 write(navigator.userAgent, span2)
