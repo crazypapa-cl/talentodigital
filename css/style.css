@@ -11,7 +11,7 @@ h2 {
     font:bold 20px arial, sans-serif;
 }
 header, footer,  nav, {
-    display: block;
+    display:block;
 }
 li {
  list-style:none;   
@@ -27,6 +27,9 @@ div, section
     padding: 10px;
     
 }
+.dis{
+    display: inline-block;
+}
 .agrupar{
     margin: 15px auto;
     text-align: left;
@@ -34,9 +37,19 @@ div, section
 }
 
 header{
+    text-align:center;
+    padding: 20px;
+}
+
+.header1{
     background:#f02c95;
     padding: 20px;
-    text-align:center;
+
+    color:white;
+}
+
+.header2{
+    background: white;
 }
 
 nav{
@@ -67,7 +80,8 @@ float: right;
 }
 
 .co1{
-    background:#95f02c ;
+    background:#c9c9c9 ;
+    margin: 0px;
 }
 
 .cabeza{
@@ -77,4 +91,5 @@ float: right;
 small{
     display: inline-block;
     color:black;
+    font: 13px arial sans-serif;
 }
