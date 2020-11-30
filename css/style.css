@@ -17,8 +17,8 @@ li {
  list-style:none;   
 }
 body{
-font: bold 18px arial, sans-serif;
-background-color:#872cf0;
+font: 18px arial, sans-serif;
+background-color:#2cf087;
 text-align: center;
 }
 div, section
@@ -31,9 +31,10 @@ div, section
     display: inline-block;
 }
 .agrupar{
+    with:300px;
     margin: 15px auto;
     text-align: left;
-    background: #2cf087;
+  //  background: #872cf0;
 }
 
 header{
@@ -80,7 +81,7 @@ float: right;
 }
 
 .co1{
-    background:#c9c9c9 ;
+   background:white ;
     margin: 0px;
 }
 
