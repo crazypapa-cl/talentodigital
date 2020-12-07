@@ -10,42 +10,33 @@ h1 {
 h2 {
     font:bold 20px arial, sans-serif;
 }
-header, footer,  nav, {
-    display:block;
-}
+
+
 li {
  list-style:none;   
 }
+
 body{
 font: 18px arial, sans-serif;
 background-color:#2cf087;
 text-align: center;
 }
-div, section
-{
-    margin: 10px;
-    padding: 10px;
+.container{
+    width:auto;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
     
-}
-.dis{
-    display: inline-block;
-}
-.agrupar{
-    with:300px;
-    margin: 15px auto;
-    text-align: left;
-  //  background: #872cf0;
 }
 
 header{
     text-align:center;
-    padding: 20px;
 }
 
 .header1{
     background:#f02c95;
     padding: 20px;
-
     color:white;
 }
 
@@ -68,21 +59,35 @@ nav{
     display: inline-block;
     color :white;
     font: bold 20px arial, sans-serif;
-    padding:5px 10px;
-    
- 
-    
+    padding:10px 10px;
+}
+nav li a :hover{
+    color:red;
 }
 
 .window{
-margin: 10px;
+width: 30%;
 background: #eb06c4;
-float: right;
+display: block;
+
 }
 
-.co1{
+.main{
+   width: 60%;
    background:white ;
-    margin: 0px;
+   box-sizing: border-box;
+   display: inline-block;
+   
+}
+.lado{
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    background-color: grey;
+    position: absolute;
+    
+
 }
 
 .cabeza{
