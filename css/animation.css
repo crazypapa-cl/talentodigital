@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color:white;
+}
+.animation {
+    width: 200px;
+    height: 200px;
+    border:grey solid 2px;
+    background-image: url(../M1/sprite_profe_01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
