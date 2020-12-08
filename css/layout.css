@@ -1,0 +1,14 @@
+.floatl{float: left;}
+.floatr{float:right;}
+.clear, .clear::after, .clear::before {clear: both;}
+.clear::after, .clear::before{
+    content: " ";
+    display: block;
+}
+
+.i-b { display: inline-block;}
+.v-baseline { vertical-align: baseline;}
+.v-botton {vertical-align: bottom;}
+.v-middle {vertical-align: bottom;}
+.v-top {vertical-align: bottom;}
+.f0 { font-size: 0;}

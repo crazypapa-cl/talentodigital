@@ -12,18 +12,35 @@
 		
 	</head>
 	<body>
-		<header class="cointeiner f0">
-			<h1 class="item i-b c12 ">TALENTO DIGITAL</h1>
-			<nav class="conteiner">
-				<ul class="">
-					<li><a href="M1/m1.html" >Actividades</a></li>	
-					<li><a href="alumnos/alumnos.html" > Alumnos </a></li>
-					<li><a href="clases/clases.html"> Clases </a></li>
-				</ul>
-			</nav>
-		</header>
+		<section class="container">
+			<article class="item">
+				<small>El ancho de tu pantalla es de :</small><small id="span"></small><small>  px</small>
+				<small>tu navegador es :</small>
+				<small id="spanDos"></small>
+			</article>	
+		</section>	
+		<!--Barra De navegacion y Header -->
+
+		<section class="conteiner">
+			<header class="item">
+				<h1 style="font-size: 80px;">TALENTO DIGITAL</h1>
+				<small>2020</small>
+				<a href="https://dvirtual.cl/">Duoc UC</a>
+				<a href="https://talentodigitalparachile.cl/que-es-talento-digital/" >saber más</a>
+			</header>
+		</section>
+
+		<nav class="conteiner">
+			<ul class="item">
+				<li><a href="M1/m1.html" >Actividades</a></li>	
+				<li><a href="alumnos/alumnos.html" > Alumnos </a></li>
+				<li><a href="clases/clases.html"> Clases </a></li>
+			</ul>
+		</nav>
+	
+	
 		<section class="container f0">
-			<article class="item  i-b c6">
+			<article class="item i-b c1">
 				<header >
 					<h2>Participa</h2>
 				</header >
@@ -51,8 +68,11 @@
 				  </figure>
 					<p>busca un editor de texto  facil y moderno yo te recomiendo que uses el <a href="https://code.visualstudio.com/">Visual studio code</a>, esta bkn y actualizado puede entender varios lenguajes y te ayuda a escribir el código, con esta lista de pasos ya puedes aportar a esta pagina de practica.</p>
 			</article>
-			<article class="item i-b c6">
-				<ul>
+
+			<article class="item c2 i-b v-baseline">
+					<h3>Links de estudios compartidos en el grupo</h3>
+					</header>
+					<ul>
 					<li><a href="https://rogerdudler.github.io/git-guide/index.es.html">Entendiendo GIT </a></li>
 					<li><a href="https://youtu.be/ExsGyZDBlJQ ">Ruta de aprendizaje de un desaroolador WEB</a></li>
 					<li><a href="https://ed.team/cursos/web ">La ruta del desarrollador web ED TEAM</a></li>
@@ -62,6 +82,41 @@
 					<li> <a href="https://elevaciondigital.pe/wp-content/uploads/2019/06/El-gran-libro-de-HTML5-CSS3-y-JavaScript.pdf">Libro de HTML CSS3 y JavaScrip</a></li>
 				</ul>
 			</article>
-		</section>
+		</section >
+		
+		<aside>
+			<header >
+				<h2>Desmenuzando el Objeto Windos Con js </h2>
+				<p>Aporte x Leandro Venegas </p>
+			</header>	
+				<section id="boxOne" class="dis">
+		</aside>
+
+		<!--<footer><p>que alguien quite la alerta del comienzo esta super fea</p></footer>-->
+		<!--<script>alert("hola terricolas, esta es la pagina de Los Cabros y cabras de Talento Digital el grupo de Whatsapp")</script>-->
 	</body>
+	<script>
+	console.log(window)	
+	let box = document.getElementById("boxOne");
+	let span = document.getElementById("span")
+	let span2 = document.getElementById("spanDos")
+	console.log(box)
+	console.log(innerWidth)
+
+	function write (text, id, p){
+		let parrafo = document.createElement(p)
+		let newText = document.createTextNode(text)
+		parrafo.appendChild(newText)
+		id.appendChild(parrafo)
+
+	}
+	//Recorriedno objeto windows 
+	for(var item in window){
+		write(item,box,"p")
+	}
+write(innerWidth,span)
+write(navigator.userAgent, span2)
+console.log(navigator)
+	</script>
+
 </html>
