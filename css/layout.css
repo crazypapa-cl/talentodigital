@@ -5,10 +5,14 @@
     content: " ";
     display: block;
 }
-
+/* Técnica dispaly : inline block*/
 .i-b { display: inline-block;}
 .v-baseline { vertical-align: baseline;}
 .v-botton {vertical-align: bottom;}
-.v-middle {vertical-align: bottom;}
-.v-top {vertical-align: bottom;}
+.v-middle {vertical-align: middle;}
+.v-top {vertical-align: top;}
 .f0 { font-size: 0;}
+
+/* Técnica Flex-box*/
+.flex { display: flex;}
+.flex-item { flex: none;}

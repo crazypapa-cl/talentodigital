@@ -1,4 +1,8 @@
-h1{ margin: 1rem auto}
+/* h1{ margin: 1rem auto} */
 
 .container{ padding:1rem;}
 
+
+nav ul {
+    margin: 15px
+}
