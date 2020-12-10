@@ -1,0 +1,27 @@
+body{
+    font-family: monospace;
+    font-size: 20px;
+    background-color: black;
+    color:red;
+   
+}
+.divprincipal{
+    border: solid 10px red;
+    padding: 2rem;
+}
+
+.parrafo{
+    border:solid lime 5px ;
+    border-radius: 50px;
+    text-align: right;
+    color:lime;
+    margin: 0 auto;
+}
+
+.lista{
+    border:solid 10px fuchsia;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 20px;
+    color :fuchsia;
+}

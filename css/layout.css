@@ -1,3 +1,4 @@
+/* Tecnica de maquetación FLOAT*/
 .floatl{float: left;}
 .floatr{float:right;}
 .clear, .clear::after, .clear::before {clear: both;}
