@@ -1,0 +1,32 @@
+.fondo {
+    background-image: linear-gradient(180deg, #000000 0, 75%, #001979 100%);
+}
+
+
+.cabezera {
+    color:white;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.color{
+    background-color: white;
+    border:tomato solid 2px;
+}
+
+
+nav{
+    background-color:#031a73;
+    border-radius: 50px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+h2{
+    color:white;
+}
+
+.paddingXl{
+    padding:40px
+}

@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size:1rem;
+    text-size-adjust: 100%;
+}
+
+body { overflow-x:hidden;}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+}
+
+
+a {
+    color:#EECF27;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CCC;
+}
+
+h1 {
+   font-size:32;
+   font-size: 2rem ;
+}
+h2{
+    font-size: 28px;
+    font-size:1.75rem;
+}
+
+h3 {
+    font-size: 24;
+    font-size: 1.5rem;
+}
+
+
+nav li {
+    display: inline-block;
+}
+
+li {
+    margin-left: 16px;
+    margin-left: 1rem;
+    list-style-type: inherit;
+    list-style-position: inside;
+}
+
+img {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}

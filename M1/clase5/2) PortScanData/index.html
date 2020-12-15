@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Bungee&family=Press+Start+2P&family=Reenie+Beanie&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajas</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="fila1">
+            p: 0x5F-Bb/Z5z
+        </div>
+        <div>
+            <div class="fila2">
+                Port Scan DATA
+            </div>            
+        </div>
+        <div class="fila3">
+            # nmap -T4 -A -v -oG - scanme.nmap.org<br>
+# Nmap 5.35DC18 scan initiated [time] as: nmap -T4 -A -v -oG - scanme.nmap.org<br>
+# Ports scanned: TCP(1000;1,3-4,6-7,...,,65389) UDP(0;) SCTP(0;) PROTOCOLS(0;)<br>
+Host: 64.13.134.52 (scanme.nmap.org)    Status: Up<br>
+Host: 64.13.134.52 (scanme.nmap.org)    Ports: 22/open/tcp//ssh//OpenSSH 4.3 <br>
+(protocol 2.0)/<br>
+25/closed/tcp//smtp///, 53/open/tcp//domain///, 70/closed/tcp//gopher///<br>
+80/open/tcp//http//Apache<br>
+httpd 2.2.3 ((CentOS))/, 113/closed/tcp//auth///, 31337<br>
+/closed/tcp//Elite///  Ignored State: filtered (993)<br>
+OS: Linux 2.6.13 - 2.6.31       Seq Index: 204  IP ID Seq: All zeros<br>
+# Nmap done at [time] -- 1 IP address (1 host up) scanned in 21.90 seconds<br>
+# nmap -p0- -v -A -T4 scanme.nmap.org<br>
+<br>
+> bin/etc/passwd/config/encrypt -x<br>
+Starting Nmap ( http://nmap.org )<br>
+Completed Ping Scan at 00:03, 0.01s elapsed (1 total hosts)<br>
+Scanning scanme.nmap.org (64.13.134.52) [65536 ports]<br>
+Discovered open port 22/tcp on 64.13.134.52<br>
+Discovered open port 53/tcp on 64.13.134.52<br>
+Discovered open port 80/tcp on 64.13.134.52<br>
+SYN Stealth Scan Timing: About 6.20% done; ETC: 00:11 (0:07:33 remaining)<br>
+Completed SYN Stealth Scan at 00:10, 463.55s elapsed (65536 total ports)<br>
+Completed Service scan at 00:10, 6.03s elapsed (3 services on 1 host)<br>
+Initiating OS detection (try #1) against scanme.nmap.org (64.13.134.52)<br>
+Initiating Traceroute at 00:10<br>
+64.13.134.52: guessing hop distance at 9<br>
+Completed SCRIPT ENGINE at 00:10, 4.04s elapsed<br>
+Host scanme.nmap.org (64.13.134.52) appears to be up ... good.<br>
+Nmap scan report for scanme.nmap.org (64.13.134.52)<br>
+Not shown: 65530 filtered ports<br>
+PORT    STATE  SERVICE VERSION<br>
+22/tcp  open   ssh     OpenSSH 4.3 (protocol 2.0)<br>
+25/tcp  closed smtp<br>
+53/tcp  open   domain  ISC BIND 9.3.4<br>
+70/tcp  closed gopher<br>
+80/tcp  open   http    Apache httpd 2.2.2 ((Fedora))<br>
+|_HTML title: Go ahead and ScanMe!<br>
+113/tcp closed auth<br>
+Device type: general purpose<br>
+Running: Linux 2.6.X<br>
+OS details: Linux 2.6.20-1 (Fedora Core 5)<br>
+Uptime guess: 2.457 days (since Thu Sep 18 13:13:24 2008)<br>
+TCP Sequence Prediction: Difficulty=204 (Good luck!)<br>
+IP ID Sequence Generation: All zeros<br>
+<br>
+TRACEROUTE (using port 80/tcp)<br>
+HOP RTT   ADDRESS<br>
+[First eight hops cut for brevity]<br>
+9   10.36 metro0.sv.svcolo.com (208.185.168.173)<br>
+10  10.29 scanme.nmap.org (64.13.134.52)<br>
+<br>
+Nmap done: 1 IP address (1 host up) scanned in 477.23 seconds<br>
+           Raw packets sent: 131432 (5.783MB) | Rcvd: 359 (14.964KB)<br>
+
+        </div>
+    </div>
+</body>
+</html>

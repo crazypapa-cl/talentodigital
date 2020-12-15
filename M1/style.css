@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.celeste{
+    margin: 10px;
+    width: auto;
+    border: solid cyan 10px;
+     background-image: url("espacio.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+
+}
+ul li{
+    margin-left: 30px;
+}
+
+.parra{
+    color:cyan;
+}
+
+.puntolinea {
+border-top:magenta 10px;
+border-right:magenta 10px;
+border-left:lime 10px;
+border-bottom:lime 10px;
+border-top-style:dotted;
+border-right-style:dotted;
+border-left-style: dashed;
+border-bottom-style: dashed;
+
+}
+
+.parra2 {
+color: white;
+font-size: 35px;
+}
+ul{
+    font-size: 30px;
+}
+
+.cajita{
+    border: solid 10px;
+    border-left:lime solid 10px;
+    border-top:lime solid 10px;
+}

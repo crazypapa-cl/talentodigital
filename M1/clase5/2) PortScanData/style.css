@@ -1,0 +1,25 @@
+body {
+    font-family: 'Audiowide', cursive;
+    background-color: lime;
+    background-image: url('./img/matrix_code.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    color: yellow;
+    padding: 25px;
+}
+
+.contenedor {
+    
+}
+
+.fila1 {
+    
+}
+.fila2 {
+
+}
+.fila3 {
+    font-size: 13px;
+    color: lime;
+    font-family: 'Press Start 2P', cursive;
+}
