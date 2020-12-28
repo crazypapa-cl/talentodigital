@@ -32,6 +32,7 @@ window.addEventListener("keydown", function (event) {
 
     valor+=30
     console.log(valor)
+    wizar.style.paddingBottom="30px";
     wizar.style.paddingTop=valor;
 
   },false);
