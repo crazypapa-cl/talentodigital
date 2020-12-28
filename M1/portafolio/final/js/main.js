@@ -27,12 +27,21 @@ any.onclick = function(){
     txt.innerHTML="tu número de la suerte"
 };
 let valor = 10
-window.addEventListener("keydown", function (event) {
-    //console.log(event);
+window.addEventListener("keydown", function (e) {
+console.log(e);
 
     valor+=30
     console.log(valor)
+    
     wizar.style.paddingBottom="30px";
-    wizar.style.paddingTop=valor;
+ 
+        if(e.keyCode == 40) {
+            wizar.style.paddingTop=valor;
+        }
+        else if(e.keyCode == 38) {
+            leftPressed = true;
+            valor-=25
+            wizar.style.paddingTop=valor;
+        }
 
   },false);
