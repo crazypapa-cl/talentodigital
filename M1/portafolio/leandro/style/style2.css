@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    color:white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    flex-flow: column wrap;
+    justify-content:flex-start;
+    align-items:stretch;
+    align-content:stretch;
+
+
+}
+
+.item{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:auto;
+    border:solid 1px white;
+    background-color: #666;
+    order:10;
+}
+
+.item:nth-child(3){
+    
+    align-self:center;
+}

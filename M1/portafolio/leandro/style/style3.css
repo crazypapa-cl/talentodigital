@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    color:white;
+    max-width: 1280px;
+    margin:auto;
+}
+
+.flex-conteiner{
+    display: flex;
+    flex-flow:row wrap;
+    align-content: stretch;
+}
+.item {
+    border:solid 1px white;
+    background-color: #666;
+    flex:0 0 100%;
+}
+
+

@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color:white;
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.name{
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column ;
+}
+.center{
+    align-items: center;
+}
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+.fondo {
+    background-image: linear-gradient(180deg, #211b2c 0, 75%, #2b054e 100%);
+}
+.item{
+    text-align: center;
+}
+.titulo{
+    font-family: 'Creepster', cursive;
+    color:rgb(122, 173, 2);
+    letter-spacing:2px;
+    font-size: 5vw;
+}
+
+footer ul {
+    list-style-type:none;
+}
+
+.anima{
+    font-size: 50px;
+}
+.animo{
+    font-size: 25px;
+}
+
+footer{
+    font-size: 1.5rem;
+    background-color: #09070c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    height: 25px;
+}
+button{
+    background-color: yellow;
+    font-size: 20px;
+    padding: 5px;
+}
+a:hover{
+    color: yellow;
+}
+img:hover{
+    transform: rotate(25deg);
+}
+
+.super{
+    background-image: url("../arboles.jpg");
+    background-repeat: repeat;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) { 
+    .off{
+        display: none;
+        
+    }
+    .flex-conteiner{
+        flex:0 0 100vh;
+    }
+
+    .titulo{
+        font-size: 4rem;
+    }
+    .anima{
+        font-size: 50px;
+    }
+
+}
+@media (min-width: 768px) { 
+    
+    footer ul {
+        display: flex;
+    }
+    footer li {
+        padding: 1.5rem;
+    }
+    .vector1{
+        transform:rotate(-90deg)
+    }
+    .offer{
+        display: none;
+    }
+ 
+  
+ }
+@media (min-width: 992px) { 
+    .flex-conteiner{
+        flex-direction: row;
+    }
+ }
+@media (min-width: 1200px) { ... }

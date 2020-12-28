@@ -1,0 +1,83 @@
+.container, .container-fluid{
+    display: block;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+
+.container{max-width: 1200px;}
+
+.item{
+    display: block;
+    padding: 1rem;
+    
+}
+
+/* ----->
+los anchos se calculan por regla de tres
+mi reticula es de 12 columns 
+mi base de 960 px
+
+12 col ---->960
+n-col  ---->???px
+
+(n-col 960)/12 columnas = en px)
+
+.*/
+
+
+.ph12 {width:100%;}
+.ph11 {width:91,66666666666667%;}
+.ph10 {width:83,33333333333333%;}
+.ph9 {width:75%;}
+.ph8 {width:66,66666666666667%;}
+.ph7 {width: 58,33333333333333%;}
+.ph6 {width: 50%;}
+.ph5 {width:41,66666666666667%;}
+.ph4 {width: 33,33333333333333%;}
+.ph3 {width: 25%;}
+.ph2 {width: 16,66666666666667%;}
+.ph1 {width: 8,333333333333333%;}
+@media screen and (min-width:30em){
+.sm12 {width:100%;}
+.sm11 {width:91,66666666666667%;}
+.sm10 {width:83,33333333333333%;}
+.sm9 {width:75%;}
+.sm8 {width:66,66666666666667%;}
+.sm7 {width: 58,33333333333333%;}
+.sm6 {width: 50%;}
+.sm5 {width:41,66666666666667%;}
+.sm4 {width: 33,33333333333333%;}
+.sm3 {width: 25%;}
+.sm2 {width: 16,66666666666667%;}
+.sm1 {width: 8,333333333333333%;}
+}
+@media screen and (min-width:48em){
+.md12 {width:100%;}
+.md11 {width:91,66666666666667%;}
+.md10 {width:83,33333333333333%;}
+.md9 {width:75%;}
+.md8 {width:66,66666666666667%;}
+.md7 {width: 58,33333333333333%;}
+.md6 {width: 50%;}
+.md5 {width:41,66666666666667%;}
+.md4 {width: 33,33333333333333%;}
+.md3 {width: 25%;}
+.md2 {width: 16,66666666666667%;}
+.md1 {width: 8,333333333333333%;}
+}
+
+@media screen and (min-width:64em){
+.lg12 {width:100%;}
+.lg11 {width:91,66666666666667%;}
+.lg10 {width:83,33333333333333%;}
+.lg9 {width:75%;}
+.lg8 {width:66,66666666666667%;}
+.lg7 {width: 58,33333333333333%;}
+.lg6 {width: 50%;}
+.lg5 {width:41,66666666666667%;}
+.lg4 {width: 33,33333333333333%;}
+.lg3 {width: 25%;}
+.lg2 {width: 16,66666666666667%;}
+.lg1 {width: 8,333333333333333%;}
+}
