@@ -130,6 +130,9 @@ img:hover{
  
   
  }
+ .wizar{
+     width: 200px;
+ }
 @media (min-width: 992px) { 
     .flex-conteiner{
         flex-direction: row;
