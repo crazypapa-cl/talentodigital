@@ -1,0 +1,42 @@
+.flex-conteiner {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column ;
+}
+.center{
+    align-items: center;
+}
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    display: flex;
+    flex: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.item{
+    text-align: center;
+}
+
+
+footer ul {
+    list-style-type:none;
+}

@@ -1,0 +1,41 @@
+@media (max-width: 576px) { 
+    .off{
+        display: none;
+        
+    }
+    .flex-conteiner{
+        flex:0 0 100vh;
+    }
+
+    .titulo{
+        font-size: 4rem;
+    }
+    .anima{
+        font-size: 50px;
+    }
+
+}
+
+
+@media (min-width: 768px) { 
+    
+    footer ul {
+        display: flex;
+    }
+    footer li {
+        padding: 1.5rem;
+    }
+    .vector1{
+        transform:rotate(-90deg)
+    }
+    .offer{
+        display: none;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .flex-conteiner{
+        flex-direction: row;
+    }
+ }
+@media (min-width: 1200px) { }
