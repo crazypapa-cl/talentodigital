@@ -1,0 +1,243 @@
+.dir {
+  margin: 10px;
+  background-color: #2a190f;
+  border-radius: 20px;
+  border-bottom: solid 5px black;
+  border-left: solid 3px #64381e;
+  border-right: solid 3px #1d1008;
+}
+
+body {
+  color: white;
+}
+
+.titulo {
+  font-family: "Creepster", cursive;
+  color: #b9f52e;
+  letter-spacing: 2px;
+  font-size: 5vw;
+}
+
+.anima {
+  font-size: 50px;
+}
+
+.animo {
+  font-size: 25px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  font-size: 1.5rem;
+  background-color: #09070c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.form {
+  width: 400px;
+  color: #09070c;
+  background-color: #eeeeee;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-conteiner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.alto {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
+  /*display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      height: 450px;
+      width: 500px;
+      background-color: #2d2931;
+      border-radius:15px;
+      box-shadow:5px 5px 10px rgba(0, 0, 0, 0.246);
+  */
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+}*/
+.flex-column {
+  display: flex;
+  flex-flow: column;
+}
+
+.center {
+  align-items: center;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.item {
+  align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: 5px;
+  border: solid 1px #424242;
+  padding: 3px 6px;
+  color: grey;
+}
+
+.mini-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.slime {
+  position: relative;
+  top: -42px;
+  left: -153px;
+}
+
+/*.alto{
+    background-image: url('../../skull.svg');
+    position: relative;
+    background-size: 100px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-position-y: 50px;
+
+}*/
+input {
+  border-radius: 30px;
+  margin-top: 10px;
+  height: 50px;
+  color: black;
+  padding: 12px 20px;
+  font-size: 1rem;
+  margin: 15px;
+  outline: none;
+  border: 0;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+::placeholder {
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+input[type=submit] {
+  background-color: #00c279;
+  outline: none;
+}
+
+input[type=submit]:hover {
+  background-color: #00e891;
+  outline: none;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  color: #18352a;
+  font-weight: bold;
+}
+
+.button-forms {
+  background-color: yellow;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.button-sass-ok {
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: green;
+  font-size: 60px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-left: solid 25px #69d869;
+  border-right: solid 25px #69d869;
+  outline: none;
+}
+
+.button-sass-caution {
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  color: black;
+  background-color: orange;
+  font-size: 60px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-left: solid 25px yellow;
+  border-right: solid 25px yellow;
+  outline: none;
+}
+
+.button-sass-alert {
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: red;
+  font-size: 60px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-left: solid 25px yellow;
+  border-right: solid 25px yellow;
+  outline: none;
+}
+
+.fondo {
+  background-image: linear-gradient(180deg, #211b2c 0, 75%, #2b054e 100%);
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+input{
+    border-radius: 30px;
+    margin-top: 10px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin: 15px;
+    outline: none;
+    border:0;
+    box-shadow:5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+::placeholder{
+font-size: 1rem;
+font-family: Helvetica;
+}
+
+input[type=submit]{
+    background-color:#00c279;
+    outline:none;
+}
+
+input[type=submit]:hover {
+    background-color: #00e891;
+    outline: none;
+    box-shadow:5px 5px rgba(0, 0, 0, 0.2);
+    color:#18352a;
+    font-weight: bold;
+
+}
+
