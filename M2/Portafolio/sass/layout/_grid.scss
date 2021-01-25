@@ -1,95 +1,68 @@
 body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
- 
-  
+    min-height: 100vh;
+    background-color:#dcdcdc;
+    background-image: url('../../pentagrama.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     
+     } 
+
+main{
+    flex-grow: 1;
 }
-.flex-conteiner {
-    display: flex;
-    flex-flow: column;
-    align-items:center;
-    align-content:flex-start;
-
-}
-
-.alto{
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    padding: 30px;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    height: 450px;
-    width: 500px;
-    background-color: #2d2931;
-    border-radius:15px;
-    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.246);
-*/
-}
-
 .flex-row{
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+    flex-flow:row wrap;
 
-   
 }
-/*.flex-row{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-between;
-}*/
-
-
 .flex-column {
     display: flex;
-    flex-flow: column ;
-}
-.center{
-    align-items: center;
-}
-.justify-content-center{
-    display: flex;
+    flex-direction: column ;
     justify-content: center;
-}
-
-.name{
-    display: flex;
-    flex: row wrap;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-}
-
-.item{
+    align-content: center;
     align-items: center;
 
 }
-
-
-footer ul {
-    list-style-type:none;
+.center-row{
+    justify-content:center;
+    align-items: center;
+}
+.center-column{
+    justify-content:center;
+    align-items: center;
 }
 
-li{
-display: inline;
+
+.justy-column-end{
+    justify-content: flex-end;
+}
+
+.absolute{
+    position: absolute;
+    right: 850px;
+}
+
+.start{
+    color: white;
+
+}
+
+.carta{
+background-color: black;
+padding: 10px;
+border-radius: 7px;
 margin: 5px;
-border: solid 1px rgb(66, 66, 66);
-padding: 3px 6px;
-color:grey;
+text-align: center;
+
 }
 
-.mini-nav{
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-align-items: center;
+.carta img{
+    width: 100px;
+    border-radius: 20px;
 
-
+}
+.imgp1{
+    width: 100px;
+    margin-top:5px;
+    margin-bottom:20px;
 }

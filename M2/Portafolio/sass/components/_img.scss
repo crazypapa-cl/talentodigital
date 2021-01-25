@@ -7,12 +7,44 @@
 }
 
 
-/*.alto{
-    background-image: url('../../skull.svg');
-    position: relative;
-    background-size: 100px;
-    background-repeat:no-repeat;
-    background-position: center;
-    background-position-y: 50px;
-    
+/*.skull{
+    background-image: url(/M2/Portafolio/wizard.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -50px;
 }*/
+
+.skull{
+    background-image: url(/M2/Portafolio/wizard.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top;
+    background-position-y: 30px;
+}
+.logo{
+    animation-name: slidein;    
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    
+      @keyframes slidein {
+        from {
+          opacity:100%;
+
+        }
+      
+        to {
+            opacity:5%;
+        } 
+        
+      }
+}
+
+
+.img1{
+  width: 500x;
+  width: 200px
+}

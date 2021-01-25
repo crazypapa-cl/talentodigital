@@ -15,7 +15,7 @@ function write(){
 
 function suerte(){
 
-   return Math.floor(Math.random() * (0 - 7)) + 7;
+   return Math.floor(Math.random() * (0 - 2)) + 2;
     
 }
 
