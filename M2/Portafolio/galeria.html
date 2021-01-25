@@ -10,13 +10,24 @@
 		<link rel="stylesheet" href="css/main.css">
 		
 	</head>
-    <body class="flex-column center-items fondo ">
-        <nav class="flex-row">
-            <a href='index.html'><img src="hand_white.svg" class="logo"></a>
-            <p>Tarot Online </p>
-         </nav>
+    <body class="flex-column center-items fon">
+        <nav class="flex-sm-column flex-sm-row flex-md-row nav-sm nav-md ">
+          <img src="hand_white.svg" class="logo">
+           <div class="flex-md-row flex-column-md  titulo-box-md">
+           <h1 class="titulo-sm ">Tarot</h1>
+           <h3 class="subtitulo-sm subtitulo-md">Online</h3>
+
+           </div>
+            <ul class="flex-sm-column nav-md nav-mdx-row typo-meta ">
+                <li><a href="tirada.html">Tirada</a></li>
+                <li><a>Arcano</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </nav>
         <main class="flex-row center-row">
-        <form method="POST" class=" flex-column justy-column-end alto skull absolute">
+        <form method="POST" class=" flex-column justy-column-end alto  absolute">
+            <img src="./witch-hat.svg" class="skull">
             <h1>¿quien consulta?</h1>
                  <input type="text" name="nombre" placeholder="Nombre" id="nombre">
                  <input type="text" name="email" placeholder="Email">
@@ -26,8 +37,11 @@
         
       
         </main>
-        <footer>
-            <p>footer</p>
+        <footer class='off-sm flex-md-row '>
+            <ul class="flex-md-row center-row ">
+                <li><span style="color:red; font-size:1.2rem;" >♥</span><a>Dona al proyecto</a></li>
+                <li><a>Talentodifital 2021</a></li>
+            </ul>
         </footer>
     </body>
     <script src="js/galeria.js">

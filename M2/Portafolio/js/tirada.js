@@ -23,20 +23,26 @@ function tirar(cartas){
     return tirada
 }
 
-
-
 function createNode(){
 
     const tiradas = tirar(3);
-    console.log(tiradas)
+    console.log(tiradas.length)
+    function animatrix(i){
+        const newImg = document.createElement('img');
+        newImg.setAttribute('class','animar')
+        uno.appendChild(newImg).setAttribute('src',`img/${tiradas[i]}.jpg`)
+        }
+    for(var i = 0; i<tiradas.length; i++){
+        
+        setTimeout(animatrix(i), 1000);
+}
     
-    tiradas.forEach(element=>{
-    const newImg = document.createElement('img');
+    /*tiradas.forEach(element=>{
+    
     newImg.setAttribute('class','animar','animar2')
     uno.appendChild(newImg).setAttribute('src',`img/${element}.jpg`)
-   /* setTimeout(newImg.setAttribute('class','animar2'), 5000);*/
+   setTimeout(newImg.setAttribute('class','animar2'), 5000);
 
-    })
+    })*/
 } 
-
-console.log(createNode())
+createNode()

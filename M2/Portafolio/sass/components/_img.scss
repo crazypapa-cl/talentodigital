@@ -16,13 +16,11 @@
 }*/
 
 .skull{
-    background-image: url(/M2/Portafolio/wizard.svg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: top;
-    background-position-y: 30px;
+  height:250px;
+  width: 100%;
+  margin-bottom:20px;
 }
+
 .logo{
     animation-name: slidein;    
     animation-duration: 1.6s;

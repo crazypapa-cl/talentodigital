@@ -25,6 +25,23 @@
   }
 }
 
+.skull {
+  text-transform: uppercase;
+  left: 20px;
+  animation-name: hat;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes hat {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(12deg);
+  }
+}
+
 body {
   color: white;
 }
@@ -71,12 +88,9 @@ a:link {
     background-position-y: -50px;
 }*/
 .skull {
-  background-image: url(/M2/Portafolio/wizard.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100px;
-  background-position: top;
-  background-position-y: 30px;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -259,7 +273,7 @@ main {
 
 .absolute {
   position: absolute;
-  right: 850px;
+  top: 100px;
 }
 
 .start {
