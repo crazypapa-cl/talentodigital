@@ -6,6 +6,11 @@ body {
   background-color: black;
   color: white;
   background-image: url("../img/8bit.png");
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 main {
@@ -18,11 +23,11 @@ main {
   width: 50%;
   display: flex;
   flex-direction: row;
-  border: solid #414040 1px;
+  /*   border: solid rgb(65, 64, 64) 1px;*/
 }
 
 img {
-  margin-left: 30%;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */
