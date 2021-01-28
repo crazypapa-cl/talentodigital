@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  background-image: url("../img/8bit.png");
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+main {
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.separador {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  /*   border: solid rgb(65, 64, 64) 1px;*/
+}
+
+img {
+  position: relative;
+}
+
+/*# sourceMappingURL=main.css.map */
