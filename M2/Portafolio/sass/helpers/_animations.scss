@@ -1,7 +1,5 @@
-.animar{
-    position: relative;
-    top:350px;
-}
+
+/*
 
 .animar{
     animation-name: carts;    
@@ -13,6 +11,13 @@
           100% {top:0px}   
       }
 }
+*/
+
+.animar{
+    transition: 1s linear;
+    transform: scale(1);
+}
+
 
 .skull{
         text-transform: uppercase;

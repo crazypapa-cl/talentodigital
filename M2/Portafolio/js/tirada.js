@@ -1,8 +1,13 @@
-
+var btn = document.getElementById("tirar")
+console.log(btn)
 var body = document.body
 var uno = document.getElementById('01')
-
-
+console.log(btn)
+function hola()
+{
+    alert('hola')
+}
+btn.addEventListener('click', createNode, true)
 /*or (const property in body) {
     console.log(`${property}: ${body[property]}`);
   }
@@ -24,7 +29,6 @@ function tirar(cartas){
 }
 
 function createNode(){
-
     const tiradas = tirar(3);
     console.log(tiradas.length)
     function animatrix(i){
@@ -46,3 +50,9 @@ function createNode(){
     })*/
 } 
 createNode()
+function clearNode(){
+    uno.children[0].remove()
+    uno.children[1].remove()
+    uno.children[0].remove()
+
+}

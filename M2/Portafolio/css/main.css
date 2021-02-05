@@ -7,22 +7,22 @@
   border-right: solid 3px #1d1008;
 }
 
-.animar {
-  position: relative;
-  top: 350px;
-}
+/*
 
-.animar {
-  animation-name: carts;
-  animation-duration: 3.6s;
+.animar{
+    animation-name: carts;    
+    animation-duration: 3.6s;
+
+
+      @keyframes carts {
+          0% {top:300px}
+          100% {top:0px}   
+      }
 }
-@keyframes carts {
-  0% {
-    top: 300px;
-  }
-  100% {
-    top: 0px;
-  }
+*/
+.animar {
+  transition: 1s linear;
+  transform: scale(1);
 }
 
 .skull {
