@@ -1,24 +1,19 @@
 
-/*
 
 .animar{
-    animation-name: carts;    
-    animation-duration: 3.6s;
+    position: relative;
+    animation-name: cards;    
+    animation-duration: 3.0s;
 
     
-      @keyframes carts {
+      @keyframes cards{
           0% {top:300px}
-          100% {top:0px}   
+          0%{opacity: 0%;}
+          30% {opacity: 0%;}
+          100% {top:0px}  
+          100%{opacity: 100%;} 
       }
 }
-*/
-
-.animar{
-    transition: 1s linear;
-    transform: scale(1);
-}
-
-
 .skull{
         text-transform: uppercase;
         left: 20px;
@@ -39,3 +34,25 @@
           }
     }
     
+
+    .star{
+      text-transform: uppercase;
+      left: 20px;
+      animation-name: estrella;    
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      width: 200px;
+  
+      
+        @keyframes estrella {
+          from {
+              transform: rotate(0deg);
+          }
+          to {
+              transform: rotate(360deg);
+          } 
+          
+        }
+  }
+  

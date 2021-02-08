@@ -7,22 +7,27 @@
   border-right: solid 3px #1d1008;
 }
 
-/*
-
-.animar{
-    animation-name: carts;    
-    animation-duration: 3.6s;
-
-
-      @keyframes carts {
-          0% {top:300px}
-          100% {top:0px}   
-      }
-}
-*/
 .animar {
-  transition: 1s linear;
-  transform: scale(1);
+  position: relative;
+  animation-name: cards;
+  animation-duration: 3s;
+}
+@keyframes cards {
+  0% {
+    top: 300px;
+  }
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    top: 0px;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .skull {
@@ -39,6 +44,24 @@
   }
   to {
     transform: rotate(12deg);
+  }
+}
+
+.star {
+  text-transform: uppercase;
+  left: 20px;
+  animation-name: estrella;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 200px;
+}
+@keyframes estrella {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
