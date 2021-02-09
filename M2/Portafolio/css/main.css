@@ -30,6 +30,12 @@
   }
 }
 
+.animar:hover {
+  transition-duration: 0.2s;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
 .skull {
   text-transform: uppercase;
   left: 20px;
