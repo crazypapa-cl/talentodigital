@@ -142,6 +142,10 @@ a:link {
   width: 200px;
 }
 
+.arcano {
+  height: 300px;
+}
+
 input {
   border-radius: 30px;
   margin-top: 10px;
@@ -177,7 +181,7 @@ input[type=submit]:hover {
   font-family: Helvetica, sans-serif;
   text-align: center;
   padding: 30px;
-  height: 450px;
+  height: 530px;
   width: 450px;
   background-color: #2d2931;
   border-radius: 15px;
