@@ -1,0 +1,56 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M3 - 13.2</title>
+    </head>
+<body style="font-family: Arial, Helvetica, sans-serif; ">
+   <h1>Actividad M3 Evaluación 2 - 22.2</h1>
+   <p> 
+    • Debe validar que se ingresen datos para los campos nombre del producto, valor de un producto y cantidad
+    • Debe validar que valor y cantidad sean números
+    • Debe facilitar un botón INGRESAR:
+        ◦ Si no hay error al validar: Debe calcular el total en inventario del producto (multiplicando cantidad x valor del producto). Luego, ingresa el producto y todos sus datos, para finalmente limpiar el formulario.
+        ◦ En caso de algún error, no debe permitir el ingreso del producto y debe mostrar los errores encontrados
+    • Debe facilitar un botón LISTAR
+        ◦ Muestra una lista con todos los productos ingresados<P>.
+    </p>
+
+
+   
+</p>
+
+<div id="sandbox" class="sandbox">
+    
+    <form id="formulario" class="form">
+        <span>PRODUCTO</span>
+        <input type="text" name="nombre" id="nombre" placeholder="Nobre del Producto" >
+        <br>
+        <br>
+        <span>VALOR____</span>
+        <input type="text" name="valor" id="valor" placeholder="Precio del producto">
+        <br>
+        <br>
+        <span>CANTIDAD
+        </span>
+        <input type="text" name="cantidad" id="cantidad">
+        <br>
+        <br>
+<input type="submit" value='enviar' style='height: 45px; width: 169px;  text-align: center; background-color: rgb(217, 255, 0);margin-top:32px' id="btn">
+<div id="alerta" class="off"></div>
+    </form>
+    <div class="inventario" id="inventario">
+        <p>Inventario</p>
+    </div>
+    <div class="Lista inventario" id="lista">
+        <p>Lista</p>
+    </div>
+    
+</div>
+</body>
+
+<script src="22_1.js">
+</script>
+</html>
