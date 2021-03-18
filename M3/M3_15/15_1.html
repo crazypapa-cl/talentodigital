@@ -1,0 +1,38 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>M3 - 15.1</title>
+    </head>
+    <style>
+        button{
+            outline:none;
+            border:none;
+        }
+    </style>
+<body style="text-align:center; font-family: Arial, Helvetica, sans-serif; background-color: black; color:white; padding: 35px; display: flex; flex-direction: column;"  > 
+  <div style="width:600px;">
+    <h1 style="border-right:solid 4px white; width:80%;" >Actividad M3 - 15.1</h1>
+   <p style="font-size:22px; color:rgb(131, 131, 131); text-align: left;">
+    Realice una página con un formulario con 1 input de texto 
+    para ingresar el nombre. <br> 
+    El botón submit deberá validar que 
+    el campo NO ESTÉ VACÍO. Al momento de hacer submit, deberá mostrar 
+    un texto en rojo indicando si el campo está vacío o en verde indicando 
+    lo que acaba de ingresar el usuario.
+    </p>
+<div id="sandbox" style="padding:32px;text-align: center; border: 2px solid black; background-color: rgb(46, 46, 46); color:white;">
+    <form >
+        <input type='text' name='texto' style="height: 35px;">
+        <input type="submit" value="ENVIAR" style="height:37px; background-color:#4df15e; cursor: pointer; border-style: none;">
+    </form>
+    <div id="alerta" style='color:yellow'>
+
+    </div>
+</div>
+</body>
+
+<script src="15_1.js">
+</script>
+</html>
