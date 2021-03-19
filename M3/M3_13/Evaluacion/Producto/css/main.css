@@ -1,0 +1,57 @@
+
+body {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(15, 15, 15); 
+    color:white; 
+    padding: 35px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor {
+    display: ;
+    max-width: 650px;
+    background-color: rgb(23 22 22);
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow:15px 27px 15px #0c0c0c;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    border:solid 4px white;
+    background-color: black;
+}
+
+input{
+    height: 32px;
+    width: auto;
+}
+.canvas{
+    border:solid 4px white;
+    width: 300px;
+    background-color:#171717;
+    color:white;
+}
+.sandbox{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+table{
+    width: 100%;
+}
+td{
+    width: 100px;
+}

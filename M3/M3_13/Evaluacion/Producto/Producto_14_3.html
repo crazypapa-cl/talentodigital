@@ -1,0 +1,94 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Productos _ M3 - 14.3</title>
+
+    </head>
+    
+<body> 
+  <div class='contenedor'>
+    <header class="header">
+    <div style=''>
+    <h1 style=" text-align: left; border-right:solid  4px white;" >Calcular Promedio</h1>
+    <p style="text-align: left;">M3 - 13_ Evaluación 2</p>  
+    </div>
+    </header>
+   <p style="font-size:22px; color:rgb(131, 131, 131); text-align: left;">
+    <span style="color:white">1. Crear Simulador de Compra de  3 productos: </span>
+    <br>Calcular Neto, Total,  Iva. Descontar 15% Sobre compras superiores a  $1.000.000. (20 puntos)
+    </p>
+<div class="sandbox" id="sandbox" style="padding:32px;text-align: center; border: 2px solid black; background-color: rgb(46, 46, 46); color:white;">
+    
+    <form id="formulario" class="formulario">
+    <table>
+        <tr>
+            <td>Prodcutos</td><td>Precio</td><td>Cantidad</td>
+        </tr>
+        <tr>
+            <td> 
+                <p>Lamp Green</p>
+            </td>
+            <td>
+                <p>$80.000</p>
+            </td>
+            <td><input type="text" name="Green"placeholder="Green">
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                <p>Lamp RED</p>
+            </td>
+            <td>
+                <p>$50.000</p>
+            </td>
+            <td><input type="text" name="red"placeholder="Red">
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                <p>Lamp Blue</p>
+            </td>
+            <td>
+                <p>$35.000</p>
+            </td>
+            <td><input type="text" name="blue"placeholder="Blue">
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>Des %15 </td>
+            <td id="descuento">""</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Precio NETO</td>
+            <td id="precioneto">"""</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >Precio + Desc</td>
+            <td id="preciodescuento">"""</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Total Con IVA</td>
+            <td id="total">"""</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Calcular" style=" background-color: yellow;">
+            </td>
+        </tr>
+    </table> 
+    </form>
+
+</div>
+</body>
+
+<script src="14_3.js">
+</script>
+</html>

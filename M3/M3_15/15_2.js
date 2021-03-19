@@ -1,7 +1,12 @@
 
 // tomando control de div sanbox en la pagina HTML
 var sandbox = document.getElementById('sandbox')
+// Obteniendo el Formulario 
+var formulario = document.getElementById('formulario')
+var form  = document.querySelectorAll('#formulario input')
+// Obteniendo el DIV para mostrar las alertas 
 var alerta = document.getElementById('alerta')
+
 
 //
 
@@ -12,10 +17,11 @@ var expresion = {
 }
 
 
-var form = document.querySelectorAll('#formulario input')
+
 console.log(form)
 form.forEach(inputs => {
     inputs.addEventListener('keyup',validar)
+    inputs.addEventListener('blur',validar)
     
 });
 
@@ -29,6 +35,8 @@ var onof={
 
 
 function validar(e){
+alerta.innerHTML=""
+
     switch(e.target.name){
       
         case 'nombre':
@@ -37,12 +45,15 @@ function validar(e){
             console.log('No contiene espacios ni digitos ')
             console.log(e.target.style.backgroundColor='#06ab0054')
             e.target.style.backgroundColor='#06ab0054'
+            e.target.style.border='solid 4px green'
             alerta.innerHTML=""
+            onof.nombre=true
             
         }else{
             console.log('Contiene un espacio o un digito')
             e.target.style.backgroundColor='#480000'
             alerta.innerHTML="<small style='background-color:red; margin-top:50px; padding:10px;'>El campo <b>" +e.target.name.toUpperCase()+"</b>  No puede contener espacios ni números</small>"
+            onof.nombre=false
         }
         break;
 
@@ -52,12 +63,19 @@ function validar(e){
                 console.log('No contiene espacios ni texto ')
                 console.log(e.target.name)
                 e.target.style.backgroundColor='#06ab0054'
+                e.target.style.border='solid 4px green'
                 alerta.innerHTML=""
+                if(e.target.value>=18 && e.target.value<=99){
+                    onof.edad=true
+                }else{
+                    alerta.innerHTML="<small style='background-color:red; margin-top:50px; padding:10px;'>El campo <b>" +e.target.name.toUpperCase()+"</b> No puedes ser menor de 18 ni mayor de 99</small>"
+                }
+            
             }else{
                 console.log('Contiene un espacio o un digito')
                 e.target.style.backgroundColor='#480000'
                 alerta.innerHTML="<small style='background-color:red; margin-top:50px; padding:10px;'>El campo <b>" +e.target.name.toUpperCase()+"</b> debe contener solo digitos</small>"
-                
+                onof.edad=false
             }
 
     }
@@ -70,22 +88,20 @@ function validar(e){
 */
 }
 
-
-/*form.addEventListener('submit',(e)=>{ 
+document.getElementById('formulario').addEventListener('submit',(e)=>{ 
     e.preventDefault()
-    let texto = form.querySelector('input').value
-    if(expresion.nombre.test()){
-        document.getElementById('alerta').innerHTML="el texto tiene espacios"
+    if(formulario.querySelectorAll('input')[0].value == "" && formulario.querySelectorAll('input')[1].value==""){
+        document.getElementById('alerta').innerHTML="<small style='background-color:red; margin-top:50px; padding:10px;'>No puedes envíar un formulario vacio</small>"
         
-    }else{
-        document.getElementById('alerta').innerHTML="el input esta vacio"
+    }else if(onof.nombre && onof.edad){
+       
+        document.getElementById('alerta').innerHTML="<small style='background-color:green; margin-top:50px; padding:10px;'>Parece estar todo Ok</small>"
+        setTimeout(function(){location.href ="15_2_1.html"; }, 1000);
     }
    
     //e.preventDefault()
     
 })
-
-*/
 
 
 
