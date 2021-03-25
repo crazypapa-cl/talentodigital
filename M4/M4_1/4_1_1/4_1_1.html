@@ -1,0 +1,31 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M3 - 13.2</title>
+    </head>
+<body>
+   <h1>Actividad M4 VEU - 1_1</h1>
+   <p>Crear en una página html, 
+       enlazada hacia una página JavaScript,
+        permitiendo ejecutar codigo vue.js, 
+        como en el ejemplo que aparece a 
+        continuación:
+    </p>
+    <h2>Café</h2>
+    <p>Enumera los tipos de café que conoces.</p>
+<div id="sandbox" class="sandbox">
+    
+    <div id="app">
+    <li v-for="cafe in tipos">
+        {{cafe.cafe}}
+    </li>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="M4_1_1.js">
+</script>
+</html>

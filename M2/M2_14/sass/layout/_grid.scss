@@ -1,0 +1,68 @@
+body{
+    min-height: 100vh;
+    background-color:#dcdcdc;
+    background-image: url('../../pentagrama.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+     } 
+
+main{
+    flex-grow: 1;
+}
+.flex-row{
+    display: flex;
+    flex-flow:row wrap;
+
+}
+.flex-column {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.center-row{
+    justify-content:center;
+    align-items: center;
+}
+.center-column{
+    justify-content:center;
+    align-items: center;
+}
+
+
+.justy-column-end{
+    justify-content: flex-end;
+}
+
+.absolute{
+    position: absolute;
+    top:100px
+}
+
+.start{
+    color: white;
+
+}
+
+.carta{
+background-color: black;
+padding: 10px;
+border-radius: 7px;
+margin: 5px;
+text-align: center;
+
+}
+
+.carta img{
+    width: 100px;
+    border-radius: 20px;
+
+}
+.imgp1{
+    width: 100px;
+    margin-top:5px;
+    margin-bottom:20px;
+}

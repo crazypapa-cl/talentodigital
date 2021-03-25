@@ -1,0 +1,233 @@
+body {
+  color: white;
+}
+
+.title {
+  color: black;
+  font-family: "Rye", cursive;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link {
+  color: white;
+}
+
+.logo {
+  width: 60px;
+}
+
+.carrusel {
+  border: solid 2px color black;
+}
+
+.gallery {
+  border: solid 4px black;
+  margin: 20px;
+}
+
+input {
+  border-radius: 30px;
+  margin-top: 10px;
+  height: 50px;
+  color: black;
+  padding: 12px 20px;
+  font-size: 1rem;
+  margin: 15px;
+  outline: none;
+  border: 0;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+::placeholder {
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+input[type=submit] {
+  background-color: #00c279;
+  outline: none;
+}
+
+input[type=submit]:hover {
+  background-color: #00e891;
+  outline: none;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  color: #18352a;
+  font-weight: bold;
+}
+
+.alto {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
+  height: 530px;
+  width: 450px;
+  background-color: #2d2931;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.246);
+}
+
+.button-forms {
+  background-color: yellow;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.button-sass-ok {
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: green;
+  font-size: 60px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-left: solid 25px #69d869;
+  border-right: solid 25px #69d869;
+  outline: none;
+}
+
+.button-sass-caution {
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  color: black;
+  background-color: orange;
+  font-size: 60px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-left: solid 25px yellow;
+  border-right: solid 25px yellow;
+  outline: none;
+}
+
+.button-sass-alert {
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: red;
+  font-size: 60px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-left: solid 25px yellow;
+  border-right: solid 25px yellow;
+  outline: none;
+}
+
+footer, nav {
+  background: black;
+  width: 100%;
+}
+
+footer {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+footer a {
+  padding-left: 5px;
+  color: grey;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.form {
+  width: 400px;
+  color: #09070c;
+  background-color: #eeeeee;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #dcdcdc;
+  background-image: url("../../pentagrama.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.center-row {
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  justify-content: center;
+  align-items: center;
+}
+
+.justy-column-end {
+  justify-content: flex-end;
+}
+
+.absolute {
+  position: absolute;
+  top: 100px;
+}
+
+.start {
+  color: white;
+}
+
+.carta {
+  background-color: black;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 5px;
+  text-align: center;
+}
+
+.carta img {
+  width: 100px;
+  border-radius: 20px;
+}
+
+.imgp1 {
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.fondo {
+  background-image: linear-gradient(180deg, #211b2c 0, 75%, #2b054e 100%);
+}
+
+/*# sourceMappingURL=main.css.map */

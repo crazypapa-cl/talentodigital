@@ -1,0 +1,18 @@
+@mixin buttons-sass ($color-b,$colorf,$brcolor)
+{
+    margin-bottom: 12px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    color:$colorf;
+    background-color:$color-b;
+    font-size: 60px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border-left: solid 25px $brcolor;
+    border-right:solid 25px $brcolor;
+    outline: none;
+
+
+
+}

@@ -1,0 +1,40 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>M3 - 15.2</title>
+    </head>
+    <style>
+        button{
+            outline:none;
+            border:none;
+        }
+    </style>
+<body style="text-align:center; font-family: Arial, Helvetica, sans-serif; background-color: black; color:white; padding: 35px; display: flex; flex-direction: column;"  > 
+  <div style="width:600px;">
+    <h1 style="border-right:solid 4px white; width:80%;" >Actividad M3 - 15.2</h1>
+   <p style="font-size:22px; color:rgb(131, 131, 131); text-align: left;">
+     Realice un formulario con 2 input para ingresar el nombre y la edad.<br><br>
+    <b style="color:white">1-</b> El botón submit deberá validar que el campo nombre no esté vacío y 
+    que no contenga espacios.
+        <br>
+        <b style="color:white">2 - </b> Además deberá validar que el campo edad no esté vacío y que contenga sólo números entre 18 y 99.
+    Si existe algún error, indicarlo con un mensaje de texto en rojo.<br>
+    <b style="color:white"> 3- </b> Si no existe error, redirigir a una página con la frase “FORMULARIO OK”.
+    </p>
+<div id="sandbox" style="padding:32px;text-align: center; border: 2px solid black; background-color: rgb(46, 46, 46); color:white;">
+    <form id='formulario' style="margin-bottom: 50px;">
+        <input type='text' name='nombre' placeholder="NOMBRE" style="height: 35px; background-color:Black; color:green">
+        <input type='text' name='edad' placeholder="EDAD" style="height: 35px; background-color:Black; color:green">
+        <input type="submit" value="ENVIAR"  style="height:37px; background-color:black;color:white; cursor: pointer; border-style: none; border-radius: 5px; border: solid 2px green;">
+    </form>
+    <div id="alerta" >
+
+    </div>
+</div>
+</body>
+
+<script src="15_2.js">
+</script>
+</html>
