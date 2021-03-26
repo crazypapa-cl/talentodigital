@@ -26,3 +26,32 @@ span{
     color:red;
     font-size: 20px;
 }
+
+img {
+    max-width: 600px;
+}
+
+.blanco{
+    color:black;
+    background-color: white;
+}
+
+.negro{
+    color:white;
+    background-color: black;
+}
+
+.amarillo{
+    color:black;
+    background-color: yellow;
+}
+
+.verde{
+    color:white;
+    background-color: green;
+}
+
+.azul{
+    color:white;
+    background-color: blue;
+}

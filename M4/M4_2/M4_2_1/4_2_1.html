@@ -1,0 +1,25 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M4_2_2</title>
+    </head>
+<body>
+   <h1>Actividad de aprendizaje 2: v-bind M4_2_2</h1>
+   <p>Extiende el ejercicio anterior <br>
+    para que la página muestre 5 imágenes. El atributo src de todas las imágenes debe estar ligado mediante v-bind. Adicionalmente, todas las imágenes deberán estar escaladas al mismo tamaño mediante el atributo width, el cual deberá estar enlazado también con v-bind. 
+    </p>
+<div id="app" class="sandbox">
+<figure>
+    <img v-bind:src=tipos[0].foto1>
+    <img v-bind:src=tipos[1].foto2>
+    <img v-bind:src=tipos[1].foto3>
+</figure>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="M4_2_1.js">
+</script>
+</html>

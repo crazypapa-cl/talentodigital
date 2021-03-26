@@ -1,0 +1,27 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M4_2_2</title>
+    </head>
+<body>
+   <h1>Actividad de aprendizaje 2: v-bind M4_2_2</h1>
+   <p>Realiza una página con 2 imágenes. <br>
+    El atributo src de ambas imágenes debe estar ligado a VUE mediante v-bind.. 
+    </p>
+<div id="app" class="sandbox">
+<figure>
+    <img v-bind:src=tipos[0].foto1 v-bind:width=tipos[0].size>
+    <img v-bind:src=tipos[0].foto2 v-bind:width=tipos[0].size>
+    <img v-bind:src=tipos[0].foto3 v-bind:width=tipos[0].size>
+    <img v-bind:src=tipos[0].foto4 v-bind:width=tipos[0].size>
+    <img v-bind:src=tipos[0].foto5 v-bind:width=tipos[0].size>
+</figure>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="M4_2_2.js">
+</script>
+</html>
