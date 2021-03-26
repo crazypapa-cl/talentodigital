@@ -10,56 +10,54 @@ var app= new Vue({
         {
             nombre: 'Mercurio',
             radio : '2,439.7 km',
-            url:'mercurio.png'
+            url:'./mercurio.png'
 
         },
         {
             nombre:'Venus',
             radio:'6,051.8 km',
-            url:'venus.png'
+            url:'./venus.png'
         },
         {
             nombre:'Tierra',
             radio:'6,371 km',
-            url:'tierra.png'
+            url:'./tierra.png'
         },
         {
             nombre:'Marte',
             radio:'3,389.5 km',
-            url:'marte.png'
+            url:'./marte.png'
         }
         ,
         {
             nombre:'Júpiter',
             radio:'69,911 km',
-            url:'Jupiter.png'
+            url:'./Júpiter.png'
         },
         {
             nombre: 'Saturno',
             radio: '58,232 km',
-            url:'saturno.png'
+            url:'./saturno.png'
         },
         {
             nombre: 'Urano',
             radio: '25,362 km',
-            url:'urano.png'
+            url:'./urano.png'
         },{
             nombre: 'Neptuno',
             radio: '24,622 km',
-            url:'neptuno.png'
+            url:'./neptuno.png'
         },{
             nombre: 'Pluton',
             radio: '1,188.3 km',
-            url:'pluton.png'
+            url:'./pluton.png'
         },
             
         
 
     ],
-    selected : '',
-    select : function (){
-        console.log(this.planetas[0].nombre)
-    },
-    img : this.selected
+    selected : "",
+    radius:""
+
     }
 })

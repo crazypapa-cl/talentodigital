@@ -1,42 +1,46 @@
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <title>M4_9_1</title>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <title>M4_9_1</title>
+</head>
+
 <body>
-   <h1>Actividad Evaluacion 1 M4 </h1>
-   <p >I. Ejecución Práctica.
- 
-    Los estudiantes en grupos de a dos, deberán crear un componente en vue.js que cumpla con los siguientes requerimientos.
-    
-    Requerimientos Generales
+    <h1>Actividad Evaluacion 1 M4 </h1>
+    <p>I. Ejecución Práctica.
+
+        Los estudiantes en grupos de a dos, deberán crear un componente en vue.js que cumpla con los siguientes
+        requerimientos.
+
+        Requerimientos Generales
         • Construir una aplicación web Vue
         • Utilizar directivas de Vue (v-bind, v-if, v-for, v-model, v-on) que usted estime conveniente.
-    
-    Enunciado
-    Observe con detención los videos Prueba1_1.mp4 y Prueba1_2.mp4.
-    
-    Escoja uno y prográmelo en Vue utilizando las imágenes que ud. prefiera. 
-    Si quiere, puede entregar los 2 ejercicios y así quedarse con la nota más alta.
-    </p>
-<div id="app" class="sandbox">
-<h1>Planetas</h1>
 
-<select v-model="selected">
-<option disabled value="">Seleccione un Planeta"</option>
-<option v-for='planeta in planetas'>
-    {{planeta.nombre}}
-</option>
-</select>
-<h2>Producto seleccionado:<br><span>{{selected}}</span></h2>
-<img v-bind:src="selected +'.png'">
-<h3>{{planetas[0].nombre}}</h3>
-</div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="M4_9_1.js">
-</script>
+        Enunciado
+        Observe con detención los videos Prueba1_1.mp4 y Prueba1_2.mp4.
+
+        Escoja uno y prográmelo en Vue utilizando las imágenes que ud. prefiera.
+        Si quiere, puede entregar los 2 ejercicios y así quedarse con la nota más alta.
+    </p>
+    <div id="app" class="sandbox">
+        <h1>Sistema Solar</h1>
+
+        <select v-model="selected">
+            <option disabled value="">Seleccione un Planeta"</option>
+            <option v-for='planeta in planetas' v-bind:value="planeta">
+                {{planeta.nombre}}
+            </option>
+        </select>
+        <h3>Seleccion:<br><span>{{selected.nombre}}<br>{{selected.radio}}</span></h3>
+        <img v-if="selected" v-bind:src="selected.url">
+        <img v-else src="./solar_system.png">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="M4_9_1.js"></script>
+    </body>
+
 </html>
