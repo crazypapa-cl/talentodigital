@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!-- saved from url=(0176)https://codepen.io/sdras/embed/YZBGNp?height=265&theme-id=light&slug-hash=YZBGNp&default-tab=result&user=sdras&embed-version=2&pen-title=Vue-controlled%20Wall-E&name=cp_embed_1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Vue-controlled Wall-E</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="CF6S8K+UdTca/Kx3E9mJAvtac27bYa8a5330mnCAdkTaaMEPHFkONtV7zemqcDKf0YGwOsaAktZcYw6YgzIdMQ==">
+<link rel="stylesheet" media="all" href="./embed-5a8968e8fdae96302fed120f7315b34912ebf28814995f2781a9e66077ca4fab.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #fefefe;
+      color: #333333;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #fefefe;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #333333;
+      background-color: #eeeeee;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #cccccc;
+      color: #333333;
+      box-shadow: inset 0px 3px #333333;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #333333;
+    }
+
+    .embed-nav svg {
+      stroke: #333333 !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./classic-993244a00f9c8b234fb97dc3e5f746eafb32ce8af086a456b1e3cfbabd0a091e.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #eeeeee; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/sdras/embed/YZBGNp?height=265&amp;theme-id=light&amp;slug-hash=YZBGNp&amp;default-tab=result&amp;user=sdras&amp;embed-version=2&amp;pen-title=Vue-controlled%20Wall-E&amp;name=cp_embed_1#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/sdras/embed/YZBGNp?height=265&amp;theme-id=light&amp;slug-hash=YZBGNp&amp;default-tab=result&amp;user=sdras&amp;embed-version=2&amp;pen-title=Vue-controlled%20Wall-E&amp;name=cp_embed_1#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/sdras/embed/YZBGNp?height=265&amp;theme-id=light&amp;slug-hash=YZBGNp&amp;default-tab=result&amp;user=sdras&amp;embed-version=2&amp;pen-title=Vue-controlled%20Wall-E&amp;name=cp_embed_1#js-box" role="button" aria-pressed="false">
+Babel
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/sdras/embed/YZBGNp?height=265&amp;theme-id=light&amp;slug-hash=YZBGNp&amp;default-tab=result&amp;user=sdras&amp;embed-version=2&amp;pen-title=Vue-controlled%20Wall-E&amp;name=cp_embed_1#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/sdras/embed/YZBGNp?height=265&amp;theme-id=light&amp;slug-hash=YZBGNp&amp;default-tab=result&amp;user=sdras&amp;embed-version=2&amp;pen-title=Vue-controlled%20Wall-E&amp;name=cp_embed_1#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/sdras/pen/YZBGNp" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"app"</span> <span class="cm-attribute">@mousemove</span>=<span class="cm-string">"coordinates"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Move your mouse or tap<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">svg</span> <span class="cm-attribute">id</span>=<span class="cm-string">"walle"</span> <span class="cm-attribute">xmlns</span>=<span class="cm-string">"http://www.w3.org/2000/svg"</span> <span class="cm-attribute">viewBox</span>=<span class="cm-string">"0 0 139.4 129.4"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">defs</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">clipPath</span> <span class="cm-attribute">id</span>=<span class="cm-string">"clip-path"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"140.5"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"978.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"4.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">clipPath</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">clipPath</span> <span class="cm-attribute">id</span>=<span class="cm-string">"clip-path-2"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M148.5,976.5s1.3,5.2-3.2,6.7l3.4,3.6,9.3-2.1-5-8.3Z"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">clipPath</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">clipPath</span> <span class="cm-attribute">id</span>=<span class="cm-string">"clip-path-3"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"155.8"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"983.6"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"4.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">clipPath</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">clipPath</span> <span class="cm-attribute">id</span>=<span class="cm-string">"clip-path-4"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M130.4,1007.6s1.3-.4,1.9.7a1.5,1.5,0,0,1-.3,1.8c-.2.3-4.5,2.9-4.5,2.9l-20.6,13.7-3.5-6.4Z"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">clipPath</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">clipPath</span> <span class="cm-attribute">id</span>=<span class="cm-string">"clip-path-5"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M150.6,1000s1.4.3,1.3,1.5a1.5,1.5,0,0,1-1.1,1.5c-.3.2-5.3.5-5.3.5l-24.6,2.3v-7.3Z"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">clipPath</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">defs</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Layer_3"</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"Layer 3"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ellipse</span> <span class="cm-attribute">id</span>=<span class="cm-string">"shadow"</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"71.5"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"100.4"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"26.5"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"3.6"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span> <span class="cm-attribute">opacity</span>=<span class="cm-string">"0.35"</span><span class="cm-tag cm-bracket">/&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"Layer_2"</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"Layer 2"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">class</span>=<span class="cm-string">"head"</span> <span class="cm-attribute">v-bind:class</span>=<span class="cm-string">"{isFlipped: flip}"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"neck"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"neckb"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M157.8,995.6a2.6,2.6,0,1,1-4.1-2.2,6.1,6.1,0,0,0-1.7-.3c-1-.2-.9-1.3-.8-1.8a1.6,1.6,0,0,1-.5-1.2,1.7,1.7,0,1,1,3.4,0,1.6,1.6,0,0,1-.5,1.2,5.8,5.8,0,0,0,1.7,1.8A2.6,2.6,0,0,1,157.8,995.6Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"70.6"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"65.6"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"0.9"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"73.3"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"71.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"1.6"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span> <span class="cm-attribute">stroke</span>=<span class="cm-string">"#636767"</span> <span class="cm-attribute">stroke-miterlimit</span>=<span class="cm-string">"10"</span> <span class="cm-attribute">stroke-width</span>=<span class="cm-string">"0.5"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"neckf"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">id</span>=<span class="cm-string">"wire"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M147.3,989.3s-2-1.9-.7-3.2l3.4-3.7.3.9s-2.6,2.5-3.2,3.3.9,2.5.9,2.5Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M64.6 67.1L65.3 67.6 69.3 67.5 69.6 67 64.6 67.1z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M149.8,983.4l.2,2.6-1.9,2.3-1.7.2s-2.5,1.9.3,3.1h4.8s-1.9-2,.5-2.8l-1.5-.2,2.4-2.3L152,983Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M147,992l4.1-.2,1.1,1.3h2.1a3,3,0,0,0-1.7,2.4h-7.6a2.6,2.6,0,0,1,2.3-2.6Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"eyecontain"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"eyes"</span> <span class="cm-attribute">:style</span>=<span class="cm-string">"{ transform:`translate3d(${x}px, ${y}px, 0)`}"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"lefteye"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">id</span>=<span class="cm-string">"lefteyeb2"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M143.8,972.7l-6.1,1.1a6.2,6.2,0,0,0-4.1,8s2.3,4.4,6.6,3.7l5.4-.6a5.7,5.7,0,0,0,4.4-6l-.6-4.1S148.7,971.8,143.8,972.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">id</span>=<span class="cm-string">"lefteyeb1"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M145.1,972.1l-8.1,1s-5.8,1.6-4.1,7.3a4.9,4.9,0,0,0,5.6,3.4l5.4-.6s4.6-.8,4.4-5.4l-.6-4.6S147.9,971.6,145.1,972.1Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"lefteyeball"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"58.7"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"53.8"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"4.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#0c1112"</span><span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">clip-path</span>=<span class="cm-string">"url(#clip-path)"</span><span class="cm-tag cm-bracket">&gt;</span>
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">id</span>=<span class="cm-string">"ball"</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"59.7"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"54.8"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"4.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">id</span>=<span class="cm-string">"glimmer"</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"61.5"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"51.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"1.4"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#fff"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"eyespace"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">clip-path</span>=<span class="cm-string">"url(#clip-path-2)"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"66.4"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"56.1"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"3.6"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f49123"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"righteye"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">id</span>=<span class="cm-string">"righteyeb2"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M158.8,978.7l4.1,4.7a6.2,6.2,0,0,1-1.8,8.8s-4.5,2.1-7.4-1.2l-3.9-3.9a5.7,5.7,0,0,1,.2-7.4l3-2.8S155.5,974.9,158.8,978.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">id</span>=<span class="cm-string">"righteyeb1"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M156.4,976l5.4,6.1s3.3,5-1.8,8.2a4.9,4.9,0,0,1-6.4-1.2l-3.7-4s-2.9-3.6.3-7l3.5-3.1S154.7,973.8,156.4,976Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"righteyeball"</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"74"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"59.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"4.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#0c1112"</span><span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">clip-path</span>=<span class="cm-string">"url(#clip-path-3)"</span><span class="cm-tag cm-bracket">&gt;</span>
+            <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">id</span>=<span class="cm-string">"ball-2"</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"ball"</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"75"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"60.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"4.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+          <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">id</span>=<span class="cm-string">"glimmer-2"</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"glimmer"</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"74.7"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"56.1"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"1.4"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#fff"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">class</span>=<span class="cm-string">"body"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"backwheel"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M149.9,1007.2l-4.8-.2s-.6-.2-2,1.2l-12.5,12.7s-1.4,2.3.3,3.5a3.9,3.9,0,0,0,3.1.8h7.1Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M152.4,1009.2s-2-4.6-6.5-.1l-11,11.2s-3.8,4.1,1.4,4.8h16.2s7.8.2,5.5-7.4Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M151.7,1010.8s-1.7-3.8-5.3-.1l-9,9.1s-3.1,3.3,1.2,3.9h13.3s6.4.1,4.6-6Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#0c1112"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M148.7,1024h3.2a5,5,0,0,0,2.6,1.1h-4.2S148.9,1024.7,148.7,1024Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#0c1112"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"rightarm"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M140.9,999.3l-10.9,6.9a3.2,3.2,0,0,0-.4,4.5c1.9,2.6,5,.1,5,.1l9.2-5.1s3.8-2.3,1.9-5.1A3.8,3.8,0,0,0,140.9,999.3Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#c6690c"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">clip-path</span>=<span class="cm-string">"url(#clip-path-4)"</span><span class="cm-tag cm-bracket">&gt;</span>
+       
+         <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">id</span>=<span class="cm-string">"newrightarm"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M130.6,1008.4l10.8-6.2a.6.6,0,0,1,.8,0c.3.3.8.5.1,1.1s-10.8,6.5-10.8,6.5-.8.5-1,.4-.6-.9-.6-.9S129.6,1009.1,130.6,1008.4Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"48.5"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"85"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"1.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"backhand"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M131,1011.5c.9.6,1.6-.2,2.4-.4a3.8,3.8,0,0,1,1.5-.3c.1.8-.4,1.4-.5,2.1l-1.4.4c-1.5.7-2.8.7-3.9-.7a.9.9,0,0,0-.5-.7,2,2,0,0,1-.5-1.8c-.1-.7.5-.8.9-1s1.8.7,1.7,1.9A.5.5,0,0,0,131,1011.5Zm-1.1-.9c-.1-.3-.2-.6-.6-.6s-.6.1-.6.5a.7.7,0,0,0,.7.7C129.8,1011.2,129.9,1010.9,130,1010.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M133.4,1016.1a3.9,3.9,0,0,1-4.3,3.6c-.9-.1-1.3-.9-1.8-1.6a5.5,5.5,0,0,1,.5-1.8c.2-.8.4-.6.8-.1a1.8,1.8,0,0,0,2.4.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#424e4f"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M129.1,1012.7c1.1,1.4,2.4,1.4,3.9.7l1.4-.4-.6,2.2-3,1.1a1.3,1.3,0,0,1-1.5-.4C128.2,1014.8,128.2,1014.1,129.1,1012.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#424e4f"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M129.1,1012.7c-1,1.4-.9,2.1.1,3.1a1.3,1.3,0,0,0,1.5.4l3-1.1-.3.9-2.4.7a1.8,1.8,0,0,1-2.4-.7c-.3-.5-.6-.7-.8.1a5.5,5.5,0,0,0-.5,1.8l-.5-.5a33.5,33.5,0,0,1,1.7-5.6A.9.9,0,0,1,129.1,1012.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M128.7,1012a33.5,33.5,0,0,0-1.7,5.6,1.6,1.6,0,0,1-.5-2c.5-1.5.9-3,1.3-4.5v-.2a.6.6,0,0,1,.3-.6A2,2,0,0,0,128.7,1012Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#424e4f"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M130,1010.7c-.1.3-.2.6-.5.6a.7.7,0,0,1-.7-.7c0-.3.3-.5.6-.5S129.9,1010.3,130,1010.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#424e4f"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"front"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f49123"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M55.1 73.1H76.6V92.91999999999999H55.1z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M136.3,1014.3h2.8s.9-.1.9,1,.1,1.8.1,1.8a.9.9,0,0,1-.8.8h-2s-1.2-.4-1.2-1.4A4,4,0,0,1,136.3,1014.3Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rect</span> <span class="cm-attribute">x</span>=<span class="cm-string">"54.8"</span> <span class="cm-attribute">y</span>=<span class="cm-string">"72.9"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"21.2"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"7.67"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"1"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"1"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M157.1,997.9h-20c-.3,0-.5-.1-.5-.3s.2-.2.5-.2h20c.3,0,.5.1.5.3S157.4,997.9,157.1,997.9Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span> <span class="cm-attribute">opacity</span>=<span class="cm-string">"0.41"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rect</span> <span class="cm-attribute">x</span>=<span class="cm-string">"57.8"</span> <span class="cm-attribute">y</span>=<span class="cm-string">"81.5"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"1.3"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"6.42"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"0.7"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.7"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f2791e"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rect</span> <span class="cm-attribute">x</span>=<span class="cm-string">"71.5"</span> <span class="cm-attribute">y</span>=<span class="cm-string">"81.4"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"1.3"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"6.42"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"0.7"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.7"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f2791e"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rect</span> <span class="cm-attribute">x</span>=<span class="cm-string">"64.8"</span> <span class="cm-attribute">y</span>=<span class="cm-string">"81.5"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"1.3"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"6.42"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"0.7"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.7"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f2791e"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rect</span> <span class="cm-attribute">x</span>=<span class="cm-string">"53.6"</span> <span class="cm-attribute">y</span>=<span class="cm-string">"71.2"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"23"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"1.92"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"1"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"1"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M59.5 73.1H70.3V79.1H59.5z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#bedb45"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M66.2 74.1H68.4V77.92999999999999H66.2z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M61.3 74H64.2V78H61.3z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"62.4"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"75.6"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"0.5"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f76f6f"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"back"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rect</span> <span class="cm-attribute">x</span>=<span class="cm-string">"74.5"</span> <span class="cm-attribute">y</span>=<span class="cm-string">"71.2"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"13"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"1.75"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"0.9"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.9"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f2791e"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M86.3 80.4L86.3 83.1 81.2 83 76.5 87.3 76.4 80.3 86.3 80.4z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M76.4 72.1H86.30000000000001V80.6H76.4z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M167.9,997.7h-9.5a.3.3,0,0,1,0-.5h9.5a.3.3,0,0,1,0,.5Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">rect</span> <span class="cm-attribute">x</span>=<span class="cm-string">"75.9"</span> <span class="cm-attribute">y</span>=<span class="cm-string">"73"</span> <span class="cm-attribute">width</span>=<span class="cm-string">"0.6"</span> <span class="cm-attribute">height</span>=<span class="cm-string">"19.31"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"0.3"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.3"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span> <span class="cm-attribute">opacity</span>=<span class="cm-string">"0.34"</span><span class="cm-tag cm-bracket">/&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"forwardwheel"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span> <span class="cm-attribute">stroke</span>=<span class="cm-string">"#0c1112"</span> <span class="cm-attribute">stroke-linecap</span>=<span class="cm-string">"round"</span> <span class="cm-attribute">stroke-miterlimit</span>=<span class="cm-string">"10"</span> <span class="cm-attribute">stroke-width</span>=<span class="cm-string">"0.25"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M68.1 100.7L90.6 100.7"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M165.8,1007.5H161s-.6-.2-1.9,1.2l-12,12.2s-1.3,2.2.3,3.3a3.8,3.8,0,0,0,3,.8h6.8Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#0c1112"</span> <span class="cm-attribute">opacity</span>=<span class="cm-string">"0.41"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M167.9,1007.2l-4.8-.2s-.6-.2-2,1.2l-12.5,12.7s-1.4,2.3.3,3.5a3.9,3.9,0,0,0,3.1.8h7.1Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M170.4,1009.2s-2-4.6-6.5-.1l-11,11.2s-3.8,4.1,1.4,4.8h16.2s7.8.2,5.5-7.4Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M169.7,1010.8s-1.7-3.8-5.3-.1l-9,9.1s-3.1,3.3,1.2,3.9h13.3s6.4.1,4.6-6Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M173.6,1017.2l-3-1.7s-11.2.1-6,8.1h5.9Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span> <span class="cm-attribute">opacity</span>=<span class="cm-string">"0.78"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M165.1,1010l1.6,4.6s-1.3-.6-1.3,1.2-3.4,3.2-3.4,3.2-1.2-.3-1.4,1.2-2.6,3.4-2.6,3.4H155s-3.5-.1-.4-3h0Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span> <span class="cm-attribute">opacity</span>=<span class="cm-string">"0.78"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"wheel"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"85.4"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"87.6"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"2.9"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"85.4"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"87.6"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"2"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ellipse</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"85.1"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"87.6"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"1.1"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.8"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"85.5"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"87.6"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"0.8"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"wheel-2"</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"wheel"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"81"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"92.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"2.9"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"81"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"92.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"2"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ellipse</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"80.7"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"92.2"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"1.1"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.8"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"81.1"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"92.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"0.8"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"wheel-3"</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"wheel"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"76.7"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"96.5"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"2.9"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"76.7"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"96.5"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"2"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ellipse</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"76.4"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"96.5"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"1.1"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.8"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"76.8"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"96.5"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"0.8"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"wheel-4"</span> <span class="cm-attribute">data-name</span>=<span class="cm-string">"wheel"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"88.9"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"95.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"4.1"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"88.9"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"95.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"2.8"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ellipse</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"88.5"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"95.2"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"1.6"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"1.1"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#394848"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">circle</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"89"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"95.2"</span> <span class="cm-attribute">r</span>=<span class="cm-string">"1.1"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"leftarm"</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"bicep"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M165.2,998.3H151.2a3.5,3.5,0,0,0-2.7,4.2c.4,2.3,4.4,2.4,4.4,2.4l11.9-.3s4.2.8,3.9-2.8A3.5,3.5,0,0,0,165.2,998.3Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#f2791e"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M154.1,998.4h12.7s2.2.2,2.2,3.1c0,0,.3,2.8-1.8,3s-13.1.3-13.1.3Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#ddeced"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M72.3 78L75.9 73.8 78.5 73.9 73.5 80.2 72.3 80.2 72.3 78z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M76 80.2L81.4 73.9 84 73.9 79 80.1 76 80.2z"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M163.9,1004.5l4.3-5.4a2.6,2.6,0,0,1,.6,1.9l-2.8,3.5Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">clip-path</span>=<span class="cm-string">"url(#clip-path-5)"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">id</span>=<span class="cm-string">"newleftarm"</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M150.1,1000.7s-1.8-.3-2,.9,1.8,1,1.8,1l17-.2s1.1-.7.3-1.5S150.1,1000.7,150.1,1000.7Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">g</span> <span class="cm-attribute">id</span>=<span class="cm-string">"hand"</span><span class="cm-tag cm-bracket">&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">ellipse</span> <span class="cm-attribute">cx</span>=<span class="cm-string">"66.8"</span> <span class="cm-attribute">cy</span>=<span class="cm-string">"77.3"</span> <span class="cm-attribute">rx</span>=<span class="cm-string">"0.9"</span> <span class="cm-attribute">ry</span>=<span class="cm-string">"0.9"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#636767"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M146.1,998.7l4.5,4.9a.8.8,0,0,1-.3,1.1l-3.5,2.1s-.5,0-.4.8,1,1.5.1,2-5.7-2.6-5.7-2.6l-2-4.5a1.7,1.7,0,0,1,1.3-2Z"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"#a2b2b3"</span><span class="cm-tag cm-bracket">/&gt;</span>
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">path</span> <span class="cm-attribute">d</span>=<span class="cm-string">"M147.2,1001.1l-4.3,1.1a1.6,1.6,0,0,0-1.1,2.1c.3,1.2,1,3.2,1,3.2"</span> <span class="cm-attribute">transform</span>=<span class="cm-string">"translate(-81.8 -924.4)"</span> <span class="cm-attribute">fill</span>=<span class="cm-string">"none"</span> <span class="cm-attribute">stroke</span>=<span class="cm-string">"#636767"</span> <span class="cm-attribute">stroke-linecap</span>=<span class="cm-string">"round"</span> <span class="cm-attribute">stroke-miterlimit</span>=<span class="cm-string">"10"</span> <span class="cm-attribute">stroke-width</span>=<span class="cm-string">"0.5"</span> <span class="cm-attribute">opacity</span>=<span class="cm-string">"0.46"</span><span class="cm-tag cm-bracket">/&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">g</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">svg</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-tag">body</span> {
+  <span class="cm-property">width</span>: <span class="cm-number">100vw</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">100vh</span>;
+  <span class="cm-property">overflow</span>: <span class="cm-atom">hidden</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-string">'Montserrat'</span>, <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">background</span>: <span class="cm-atom">#23a9e0</span>;
+  <span class="cm-property">cursor</span>: <span class="cm-variable cm-callee">url</span>(<span class="cm-string">'https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/cockroach%20(2).ico'</span>), <span class="cm-atom">default</span>;
+  <span class="cm-meta">-webkit-</span><span class="cm-property">overflow-scrolling</span>: <span class="cm-variable-3">touch</span>;
+}
+
+<span class="cm-builtin">#app</span> {
+  <span class="cm-meta">-webkit-</span><span class="cm-property">tap-highlight-color</span>: <span class="cm-variable-3">transparent</span>;
+}
+
+<span class="cm-tag">svg</span> {
+  <span class="cm-property">width</span>: <span class="cm-number">100vw</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">100vh</span>;
+  <span class="cm-property">max-height</span>: <span class="cm-number">400px</span>;
+  <span class="cm-property">margin-left</span>: <span class="cm-number">20vw</span>;
+}
+
+<span class="cm-tag">p</span> {
+  <span class="cm-property">font-size</span>: <span class="cm-number">16px</span>;
+  <span class="cm-property">color</span>: <span class="cm-keyword">white</span>;
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+}
+
+<span class="cm-qualifier">.isFlipped</span> {
+  <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scaleX</span>(<span class="cm-number">-1</span>);
+  <span class="cm-property">transform-origin</span>: <span class="cm-number">50%</span> <span class="cm-number">50%</span>;
+}
+
+<span class="cm-builtin">#leftarm</span> {
+  <span class="cm-property">transform-origin</span>: <span class="cm-number">100%</span> <span class="cm-number">0</span>;
+}
+
+<span class="cm-def">@media</span> <span class="cm-attribute">screen</span> <span class="cm-keyword">and</span> (<span class="cm-property">max-width</span>: <span class="cm-number">600px</span>) {
+  <span class="cm-tag">svg</span> {
+    <span class="cm-property">max-height</span>: <span class="cm-number">200px</span> <span class="cm-keyword">!important</span>;
+    <span class="cm-property">margin-left</span>: <span class="cm-number">0</span> <span class="cm-keyword">!important</span>;
+  }
+}</code></pre>
+<a href="https://codepen.io/sdras/embed/YZBGNp?height=265&amp;theme-id=light&amp;slug-hash=YZBGNp&amp;default-tab=result&amp;user=sdras&amp;embed-version=2&amp;pen-title=Vue-controlled%20Wall-E&amp;name=cp_embed_1#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<pre tabindex="0"><code data-lang="jsx" id="actual-js-code" class=" cm-s-default"><span class="cm-keyword">new</span> <span class="cm-variable">Vue</span>({
+  <span class="cm-property">el</span>: <span class="cm-string">'#app'</span>,
+  <span class="cm-property">data</span>() {
+    <span class="cm-keyword">return</span> {
+      <span class="cm-property">startX</span>: <span class="cm-number">0</span>,
+      <span class="cm-property">x</span>: <span class="cm-number">0</span>,
+      <span class="cm-property">y</span>: <span class="cm-number">0</span>,
+      <span class="cm-property">flip</span>: <span class="cm-atom">false</span>,
+      <span class="cm-property">audioPlay</span>: <span class="cm-atom">false</span>,
+      <span class="cm-property">startArms</span>: <span class="cm-number">0</span>
+    }
+  },
+  <span class="cm-property">methods</span>: {
+    <span class="cm-property">armsTL</span>() {
+      <span class="cm-keyword">let</span> <span class="cm-def">tl</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">TimelineMax</span>();
+      <span class="cm-variable-2">tl</span>.<span class="cm-property">add</span>(<span class="cm-string">'startarms'</span>)
+      <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#backhand'</span>, <span class="cm-number">2</span>, {
+        <span class="cm-property">x</span>: <span class="cm-operator">-</span><span class="cm-number">16</span>,
+        <span class="cm-property">rotation</span>: <span class="cm-number">150</span>,
+        <span class="cm-property">transformOrigin</span>: <span class="cm-string">'50% 50%'</span>
+      }, <span class="cm-string">'startarms'</span>);
+      <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#rightarm'</span>, <span class="cm-number">2</span>, {
+        <span class="cm-property">rotation</span>: <span class="cm-number">30</span>,
+        <span class="cm-property">transformOrigin</span>: <span class="cm-string">'100% 0'</span>
+      }, <span class="cm-string">'startarms'</span>);
+      <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#newrightarm'</span>, <span class="cm-number">2</span>, {
+        <span class="cm-property">x</span>: <span class="cm-operator">-</span><span class="cm-number">94</span>,
+        <span class="cm-property">y</span>: <span class="cm-operator">-</span><span class="cm-number">918</span>,
+        <span class="cm-property">rotation</span>: <span class="cm-number">10</span>,
+        <span class="cm-property">transformOrigin</span>: <span class="cm-string">'100% 100%'</span>
+      }, <span class="cm-string">'startarms'</span>);
+
+      <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#hand'</span>, <span class="cm-number">2</span>, {
+        <span class="cm-property">x</span>: <span class="cm-operator">-</span><span class="cm-number">15</span>,
+        <span class="cm-property">y</span>: <span class="cm-operator">-</span><span class="cm-number">7</span>,
+        <span class="cm-property">rotation</span>: <span class="cm-number">90</span>,
+        <span class="cm-property">transformOrigin</span>: <span class="cm-string">'50% 50%'</span>
+      }, <span class="cm-string">'startarms'</span>);
+      <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#leftarm'</span>, <span class="cm-number">2</span>, {
+        <span class="cm-property">rotation</span>: <span class="cm-number">20</span>,
+        <span class="cm-property">transformOrigin</span>: <span class="cm-string">'100% 0'</span>
+      }, <span class="cm-string">'startarms'</span>);
+      <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#newleftarm'</span>, <span class="cm-number">2</span>, {
+        <span class="cm-property">x</span>: <span class="cm-operator">-</span><span class="cm-number">100</span>,
+        <span class="cm-property">y</span>: <span class="cm-operator">-</span><span class="cm-number">924</span>,
+        <span class="cm-property">transformOrigin</span>: <span class="cm-string">'100% 100%'</span>
+      }, <span class="cm-string">'startarms'</span>);
+
+      <span class="cm-keyword">return</span> <span class="cm-variable-2">tl</span>;
+    },
+    <span class="cm-property">coordinates</span>(<span class="cm-def">e</span>) {
+      <span class="cm-keyword">const</span> <span class="cm-def">audio</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Audio</span>(<span class="cm-string">'https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/Whoa.mp3'</span>),
+        <span class="cm-def">walleBox</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">'walle'</span>).<span class="cm-property">getBoundingClientRect</span>(),
+        <span class="cm-def">walleCoords</span> <span class="cm-operator">=</span> <span class="cm-variable-2">walleBox</span>.<span class="cm-property">width</span> <span class="cm-operator">/</span> <span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable-2">walleBox</span>.<span class="cm-property">left</span>;
+
+      <span class="cm-keyword">if</span> (<span class="cm-keyword">this</span>.<span class="cm-property">startArms</span> <span class="cm-operator">==</span> <span class="cm-number">0</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">startArms</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-property">armsTL</span>();
+      }
+
+      <span class="cm-keyword">this</span>.<span class="cm-property">y</span> <span class="cm-operator">=</span> <span class="cm-variable-2">e</span>.<span class="cm-property">clientY</span> <span class="cm-operator">/</span> <span class="cm-number">80</span> <span class="cm-operator">-</span> <span class="cm-number">2</span>;
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">e</span>.<span class="cm-property">clientX</span> <span class="cm-operator">&gt;</span> <span class="cm-variable-2">walleCoords</span>) {
+        <span class="cm-keyword">this</span>.<span class="cm-property">x</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span>(<span class="cm-variable-2">e</span>.<span class="cm-property">clientX</span> <span class="cm-operator">/</span> <span class="cm-number">200</span>);
+        <span class="cm-keyword">this</span>.<span class="cm-property">flip</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;
+        <span class="cm-keyword">if</span> (<span class="cm-keyword">this</span>.<span class="cm-property">audioPlay</span> <span class="cm-operator">===</span> <span class="cm-atom">false</span>) {
+          <span class="cm-variable-2">audio</span>.<span class="cm-property">play</span>();
+          <span class="cm-keyword">this</span>.<span class="cm-property">audioPlay</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;
+        }
+      } <span class="cm-keyword">else</span> {
+        <span class="cm-keyword">this</span>.<span class="cm-property">audioPlay</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+        <span class="cm-keyword">this</span>.<span class="cm-property">x</span> <span class="cm-operator">=</span> <span class="cm-variable-2">e</span>.<span class="cm-property">clientX</span> <span class="cm-operator">/</span> <span class="cm-number">200</span> <span class="cm-operator">-</span> <span class="cm-number">5</span>;
+        <span class="cm-keyword">this</span>.<span class="cm-property">flip</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;
+
+        <span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>(<span class="cm-string">"#righteyeb2"</span>, {
+          <span class="cm-property">scaleX</span>: <span class="cm-number">1</span> <span class="cm-operator">+</span> (<span class="cm-number">1</span> <span class="cm-operator">-</span> <span class="cm-variable-2">e</span>.<span class="cm-property">clientX</span> <span class="cm-operator">/</span> <span class="cm-variable-2">walleCoords</span>) <span class="cm-operator">/</span> <span class="cm-number">5</span>
+        });
+        <span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>(<span class="cm-string">"#lefteyeb2"</span>, {
+          <span class="cm-property">scaleX</span>: <span class="cm-number">1</span> <span class="cm-operator">+</span> (<span class="cm-number">1</span> <span class="cm-operator">-</span> <span class="cm-variable-2">e</span>.<span class="cm-property">clientX</span> <span class="cm-operator">/</span> <span class="cm-variable-2">walleCoords</span>) <span class="cm-operator">/</span> <span class="cm-number">5</span>
+        });
+        <span class="cm-variable">TweenMax</span>.<span class="cm-property">set</span>(<span class="cm-string">"#walle"</span>, {
+          <span class="cm-property">x</span>: ((<span class="cm-variable-2">e</span>.<span class="cm-property">clientX</span> <span class="cm-operator">/</span> <span class="cm-variable-2">walleCoords</span>) <span class="cm-operator">*</span> <span class="cm-number">50</span>) <span class="cm-operator">-</span> <span class="cm-number">40</span>
+        });
+
+        <span class="cm-keyword">this</span>.<span class="cm-property">startArms</span>.<span class="cm-property">progress</span>(<span class="cm-number">1</span> <span class="cm-operator">-</span> (<span class="cm-variable-2">e</span>.<span class="cm-property">clientX</span> <span class="cm-operator">/</span> <span class="cm-variable-2">walleCoords</span>)).<span class="cm-property">pause</span>();
+
+      }
+    },
+  },
+  <span class="cm-property">mounted</span>() {
+    <span class="cm-keyword">let</span> <span class="cm-def">tl</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">TimelineMax</span>({
+      <span class="cm-property">repeat</span>: <span class="cm-operator">-</span><span class="cm-number">1</span>,
+      <span class="cm-property">repeatDelay</span>: <span class="cm-number">2</span>
+    });
+
+    <span class="cm-variable-2">tl</span>.<span class="cm-property">add</span>(<span class="cm-string">'redo'</span>)
+    <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#lefteye'</span>, <span class="cm-number">0.5</span>, {
+      <span class="cm-property">rotation</span>: <span class="cm-number">5</span>,
+      <span class="cm-property">repeat</span>: <span class="cm-number">3</span>,
+      <span class="cm-property">yoyo</span>: <span class="cm-atom">true</span>,
+      <span class="cm-property">transformOrigin</span>: <span class="cm-string">'100% 50%'</span>,
+      <span class="cm-property">ease</span>: <span class="cm-variable">Sine</span>.<span class="cm-property">easeOut</span>
+    }, <span class="cm-string">'redo'</span>);
+    <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#righteye'</span>, <span class="cm-number">0.5</span>, {
+      <span class="cm-property">rotation</span>: <span class="cm-operator">-</span><span class="cm-number">5</span>,
+      <span class="cm-property">repeat</span>: <span class="cm-number">3</span>,
+      <span class="cm-property">yoyo</span>: <span class="cm-atom">true</span>,
+      <span class="cm-property">transformOrigin</span>: <span class="cm-string">'0% 30%'</span>,
+      <span class="cm-property">ease</span>: <span class="cm-variable">Sine</span>.<span class="cm-property">easeOut</span>
+    }, <span class="cm-string">'redo+=0'</span>);
+    <span class="cm-variable-2">tl</span>.<span class="cm-property">fromTo</span>(<span class="cm-string">'#lefteyeball'</span>, <span class="cm-number">0.05</span>, {
+      <span class="cm-property">scaleY</span>: <span class="cm-number">1</span>
+    }, {
+      <span class="cm-property">scaleY</span>: <span class="cm-number">0</span>,
+      <span class="cm-property">repeat</span>: <span class="cm-number">3</span>,
+      <span class="cm-property">yoyo</span>: <span class="cm-atom">true</span>,
+      <span class="cm-property">transformOrigin</span>: <span class="cm-string">'50% 50%'</span>,
+      <span class="cm-property">ease</span>: <span class="cm-variable">Circ</span>.<span class="cm-property">easeOut</span>
+    }, <span class="cm-string">'redo+=4'</span>);
+    <span class="cm-variable-2">tl</span>.<span class="cm-property">fromTo</span>(<span class="cm-string">'#righteyeball'</span>, <span class="cm-number">0.05</span>, {
+      <span class="cm-property">scaleY</span>: <span class="cm-number">1</span>
+    }, {
+      <span class="cm-property">scaleY</span>: <span class="cm-number">0</span>,
+      <span class="cm-property">repeat</span>: <span class="cm-number">3</span>,
+      <span class="cm-property">yoyo</span>: <span class="cm-atom">true</span>,
+      <span class="cm-property">transformOrigin</span>: <span class="cm-string">'50% 50%'</span>,
+      <span class="cm-property">ease</span>: <span class="cm-variable">Circ</span>.<span class="cm-property">easeOut</span>
+    }, <span class="cm-string">'redo+=4'</span>);
+    <span class="cm-variable-2">tl</span>.<span class="cm-property">to</span>(<span class="cm-string">'#eyecontain'</span>, <span class="cm-number">0.4</span>, {
+      <span class="cm-property">rotation</span>: <span class="cm-operator">-</span><span class="cm-number">15</span>,
+      <span class="cm-property">repeat</span>: <span class="cm-number">1</span>,
+      <span class="cm-property">yoyo</span>: <span class="cm-atom">true</span>,
+      <span class="cm-property">transformOrigin</span>: <span class="cm-string">'50% 50%'</span>,
+      <span class="cm-property">ease</span>: <span class="cm-variable">Sine</span>.<span class="cm-property">easeInOut</span>
+    }, <span class="cm-string">'redo+=2'</span>);
+  }
+});
+
+<span class="cm-variable">TweenMax</span>.<span class="cm-property">to</span>(<span class="cm-string">'p'</span>, <span class="cm-number">0.5</span>, {
+  <span class="cm-property">opacity</span>: <span class="cm-number">0</span>,
+  <span class="cm-property">delay</span>: <span class="cm-number">2</span>,
+  <span class="cm-property">ease</span>: <span class="cm-variable">Sine</span>.<span class="cm-property">easeIn</span>
+});</code></pre>
+<a href="https://codepen.io/sdras/embed/YZBGNp?height=265&amp;theme-id=light&amp;slug-hash=YZBGNp&amp;default-tab=result&amp;user=sdras&amp;embed-version=2&amp;pen-title=Vue-controlled%20Wall-E&amp;name=cp_embed_1#0" id="view-js-compiled-button" class="action-button bottom right view-compiled-button" data-type="js">
+View Compiled
+</a>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" name="CodePen Preview for Vue-controlled Wall-E" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for Vue-controlled Wall-E" data-src="https://cdpn.io/sdras/fullembedgrid/YZBGNp?animations=run&amp;type=embed" src="./YZBGNp.html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/sdras" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/sdras" target="_blank" rel="noopener">Sarah Drasner</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/sdras" target="_blank" rel="noopener" class="about-user-more">
+See more by @sdras on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js</a>
+</li>
+<li>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js</a>
+</li>
+</ol>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="">
+    __processedPen = {"html":"&lt;div id=&quot;app&quot; @mousemove=&quot;coordinates&quot;&gt;\n  &lt;p&gt;Move your mouse or tap&lt;/p&gt;\n  &lt;svg id=&quot;walle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 139.4 129.4&quot;&gt;\n  &lt;defs&gt;\n    &lt;clipPath id=&quot;clip-path&quot; transform=&quot;translate(-81.8 -924.4)&quot;&gt;\n      &lt;circle cx=&quot;140.5&quot; cy=&quot;978.2&quot; r=&quot;4.3&quot; fill=&quot;none&quot;/&gt;\n    &lt;/clipPath&gt;\n    &lt;clipPath id=&quot;clip-path-2&quot; transform=&quot;translate(-81.8 -924.4)&quot;&gt;\n      &lt;path d=&quot;M148.5,976.5s1.3,5.2-3.2,6.7l3.4,3.6,9.3-2.1-5-8.3Z&quot; fill=&quot;none&quot;/&gt;\n    &lt;/clipPath&gt;\n    &lt;clipPath id=&quot;clip-path-3&quot; transform=&quot;translate(-81.8 -924.4)&quot;&gt;\n      &lt;circle cx=&quot;155.8&quot; cy=&quot;983.6&quot; r=&quot;4.3&quot; fill=&quot;none&quot;/&gt;\n    &lt;/clipPath&gt;\n    &lt;clipPath id=&quot;clip-path-4&quot; transform=&quot;translate(-81.8 -924.4)&quot;&gt;\n      &lt;path d=&quot;M130.4,1007.6s1.3-.4,1.9.7a1.5,1.5,0,0,1-.3,1.8c-.2.3-4.5,2.9-4.5,2.9l-20.6,13.7-3.5-6.4Z&quot; fill=&quot;none&quot;/&gt;\n    &lt;/clipPath&gt;\n    &lt;clipPath id=&quot;clip-path-5&quot; transform=&quot;translate(-81.8 -924.4)&quot;&gt;\n      &lt;path d=&quot;M150.6,1000s1.4.3,1.3,1.5a1.5,1.5,0,0,1-1.1,1.5c-.3.2-5.3.5-5.3.5l-24.6,2.3v-7.3Z&quot; fill=&quot;none&quot;/&gt;\n    &lt;/clipPath&gt;\n  &lt;/defs&gt;\n  &lt;g id=&quot;Layer_3&quot; data-name=&quot;Layer 3&quot;&gt;\n    &lt;ellipse id=&quot;shadow&quot; cx=&quot;71.5&quot; cy=&quot;100.4&quot; rx=&quot;26.5&quot; ry=&quot;3.6&quot; fill=&quot;#394848&quot; opacity=&quot;0.35&quot;/&gt;\n  &lt;/g&gt;\n  &lt;g id=&quot;Layer_2&quot; data-name=&quot;Layer 2&quot;&gt;\n    &lt;g class=&quot;head&quot; v-bind:class=&quot;{isFlipped: flip}&quot;&gt;\n    &lt;g id=&quot;neck&quot;&gt;\n      &lt;g id=&quot;neckb&quot;&gt;\n        &lt;path d=&quot;M157.8,995.6a2.6,2.6,0,1,1-4.1-2.2,6.1,6.1,0,0,0-1.7-.3c-1-.2-.9-1.3-.8-1.8a1.6,1.6,0,0,1-.5-1.2,1.7,1.7,0,1,1,3.4,0,1.6,1.6,0,0,1-.5,1.2,5.8,5.8,0,0,0,1.7,1.8A2.6,2.6,0,0,1,157.8,995.6Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;circle cx=&quot;70.6&quot; cy=&quot;65.6&quot; r=&quot;0.9&quot; fill=&quot;#636767&quot;/&gt;\n        &lt;circle cx=&quot;73.3&quot; cy=&quot;71.2&quot; r=&quot;1.6&quot; fill=&quot;none&quot; stroke=&quot;#636767&quot; stroke-miterlimit=&quot;10&quot; stroke-width=&quot;0.5&quot;/&gt;\n      &lt;/g&gt;\n      &lt;g id=&quot;neckf&quot;&gt;\n        &lt;path id=&quot;wire&quot; d=&quot;M147.3,989.3s-2-1.9-.7-3.2l3.4-3.7.3.9s-2.6,2.5-3.2,3.3.9,2.5.9,2.5Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#394848&quot;/&gt;\n        &lt;path fill=&quot;#a2b2b3&quot; d=&quot;M64.6 67.1L65.3 67.6 69.3 67.5 69.6 67 64.6 67.1z&quot;/&gt;\n        &lt;path d=&quot;M149.8,983.4l.2,2.6-1.9,2.3-1.7.2s-2.5,1.9.3,3.1h4.8s-1.9-2,.5-2.8l-1.5-.2,2.4-2.3L152,983Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;path d=&quot;M147,992l4.1-.2,1.1,1.3h2.1a3,3,0,0,0-1.7,2.4h-7.6a2.6,2.6,0,0,1,2.3-2.6Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#ddeced&quot;/&gt;\n      &lt;/g&gt;\n    &lt;/g&gt;\n    &lt;g id=&quot;eyecontain&quot;&gt;\n    &lt;g id=&quot;eyes&quot; :style=&quot;{ transform:`translate3d(${x}px, ${y}px, 0)`}&quot;&gt;\n      &lt;g id=&quot;lefteye&quot;&gt;\n        &lt;path id=&quot;lefteyeb2&quot; d=&quot;M143.8,972.7l-6.1,1.1a6.2,6.2,0,0,0-4.1,8s2.3,4.4,6.6,3.7l5.4-.6a5.7,5.7,0,0,0,4.4-6l-.6-4.1S148.7,971.8,143.8,972.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;path id=&quot;lefteyeb1&quot; d=&quot;M145.1,972.1l-8.1,1s-5.8,1.6-4.1,7.3a4.9,4.9,0,0,0,5.6,3.4l5.4-.6s4.6-.8,4.4-5.4l-.6-4.6S147.9,971.6,145.1,972.1Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;g id=&quot;lefteyeball&quot;&gt;\n          &lt;circle cx=&quot;58.7&quot; cy=&quot;53.8&quot; r=&quot;4.3&quot; fill=&quot;#0c1112&quot;/&gt;\n          &lt;g clip-path=&quot;url(#clip-path)&quot;&gt;\n            &lt;circle id=&quot;ball&quot; cx=&quot;59.7&quot; cy=&quot;54.8&quot; r=&quot;4.3&quot; fill=&quot;#394848&quot;/&gt;\n          &lt;/g&gt;\n          &lt;circle id=&quot;glimmer&quot; cx=&quot;61.5&quot; cy=&quot;51.2&quot; r=&quot;1.4&quot; fill=&quot;#fff&quot;/&gt;\n        &lt;/g&gt;\n      &lt;/g&gt;\n      &lt;g id=&quot;eyespace&quot;&gt;\n        &lt;g clip-path=&quot;url(#clip-path-2)&quot;&gt;\n          &lt;circle cx=&quot;66.4&quot; cy=&quot;56.1&quot; r=&quot;3.6&quot; fill=&quot;#f49123&quot;/&gt;\n        &lt;/g&gt;\n      &lt;/g&gt;\n      &lt;g id=&quot;righteye&quot;&gt;\n        &lt;path id=&quot;righteyeb2&quot; d=&quot;M158.8,978.7l4.1,4.7a6.2,6.2,0,0,1-1.8,8.8s-4.5,2.1-7.4-1.2l-3.9-3.9a5.7,5.7,0,0,1,.2-7.4l3-2.8S155.5,974.9,158.8,978.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;path id=&quot;righteyeb1&quot; d=&quot;M156.4,976l5.4,6.1s3.3,5-1.8,8.2a4.9,4.9,0,0,1-6.4-1.2l-3.7-4s-2.9-3.6.3-7l3.5-3.1S154.7,973.8,156.4,976Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;g id=&quot;righteyeball&quot;&gt;\n          &lt;circle cx=&quot;74&quot; cy=&quot;59.2&quot; r=&quot;4.3&quot; fill=&quot;#0c1112&quot;/&gt;\n          &lt;g clip-path=&quot;url(#clip-path-3)&quot;&gt;\n            &lt;circle id=&quot;ball-2&quot; data-name=&quot;ball&quot; cx=&quot;75&quot; cy=&quot;60.2&quot; r=&quot;4.3&quot; fill=&quot;#394848&quot;/&gt;\n          &lt;/g&gt;\n          &lt;circle id=&quot;glimmer-2&quot; data-name=&quot;glimmer&quot; cx=&quot;74.7&quot; cy=&quot;56.1&quot; r=&quot;1.4&quot; fill=&quot;#fff&quot;/&gt;\n        &lt;/g&gt;\n      &lt;/g&gt;\n    &lt;/g&gt;\n    &lt;/g&gt;\n    &lt;/g&gt;\n    &lt;g class=&quot;body&quot;&gt;\n    &lt;g id=&quot;backwheel&quot;&gt;\n      &lt;path d=&quot;M149.9,1007.2l-4.8-.2s-.6-.2-2,1.2l-12.5,12.7s-1.4,2.3.3,3.5a3.9,3.9,0,0,0,3.1.8h7.1Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#394848&quot;/&gt;\n      &lt;path d=&quot;M152.4,1009.2s-2-4.6-6.5-.1l-11,11.2s-3.8,4.1,1.4,4.8h16.2s7.8.2,5.5-7.4Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#636767&quot;/&gt;\n      &lt;path d=&quot;M151.7,1010.8s-1.7-3.8-5.3-.1l-9,9.1s-3.1,3.3,1.2,3.9h13.3s6.4.1,4.6-6Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#0c1112&quot;/&gt;\n    &lt;/g&gt;\n    &lt;path d=&quot;M148.7,1024h3.2a5,5,0,0,0,2.6,1.1h-4.2S148.9,1024.7,148.7,1024Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#0c1112&quot;/&gt;\n    &lt;g id=&quot;rightarm&quot;&gt;\n      &lt;path d=&quot;M140.9,999.3l-10.9,6.9a3.2,3.2,0,0,0-.4,4.5c1.9,2.6,5,.1,5,.1l9.2-5.1s3.8-2.3,1.9-5.1A3.8,3.8,0,0,0,140.9,999.3Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#c6690c&quot;/&gt;\n      &lt;g clip-path=&quot;url(#clip-path-4)&quot;&gt;\n       \n         &lt;path id=&quot;newrightarm&quot; d=&quot;M130.6,1008.4l10.8-6.2a.6.6,0,0,1,.8,0c.3.3.8.5.1,1.1s-10.8,6.5-10.8,6.5-.8.5-1,.4-.6-.9-.6-.9S129.6,1009.1,130.6,1008.4Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;/g&gt;\n      &lt;circle cx=&quot;48.5&quot; cy=&quot;85&quot; r=&quot;1.3&quot; fill=&quot;#636767&quot;/&gt;\n      &lt;g id=&quot;backhand&quot;&gt;\n        &lt;path d=&quot;M131,1011.5c.9.6,1.6-.2,2.4-.4a3.8,3.8,0,0,1,1.5-.3c.1.8-.4,1.4-.5,2.1l-1.4.4c-1.5.7-2.8.7-3.9-.7a.9.9,0,0,0-.5-.7,2,2,0,0,1-.5-1.8c-.1-.7.5-.8.9-1s1.8.7,1.7,1.9A.5.5,0,0,0,131,1011.5Zm-1.1-.9c-.1-.3-.2-.6-.6-.6s-.6.1-.6.5a.7.7,0,0,0,.7.7C129.8,1011.2,129.9,1010.9,130,1010.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#636767&quot;/&gt;\n        &lt;path d=&quot;M133.4,1016.1a3.9,3.9,0,0,1-4.3,3.6c-.9-.1-1.3-.9-1.8-1.6a5.5,5.5,0,0,1,.5-1.8c.2-.8.4-.6.8-.1a1.8,1.8,0,0,0,2.4.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#424e4f&quot;/&gt;\n        &lt;path d=&quot;M129.1,1012.7c1.1,1.4,2.4,1.4,3.9.7l1.4-.4-.6,2.2-3,1.1a1.3,1.3,0,0,1-1.5-.4C128.2,1014.8,128.2,1014.1,129.1,1012.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#424e4f&quot;/&gt;\n        &lt;path d=&quot;M129.1,1012.7c-1,1.4-.9,2.1.1,3.1a1.3,1.3,0,0,0,1.5.4l3-1.1-.3.9-2.4.7a1.8,1.8,0,0,1-2.4-.7c-.3-.5-.6-.7-.8.1a5.5,5.5,0,0,0-.5,1.8l-.5-.5a33.5,33.5,0,0,1,1.7-5.6A.9.9,0,0,1,129.1,1012.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#394848&quot;/&gt;\n        &lt;path d=&quot;M128.7,1012a33.5,33.5,0,0,0-1.7,5.6,1.6,1.6,0,0,1-.5-2c.5-1.5.9-3,1.3-4.5v-.2a.6.6,0,0,1,.3-.6A2,2,0,0,0,128.7,1012Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#424e4f&quot;/&gt;\n        &lt;path d=&quot;M130,1010.7c-.1.3-.2.6-.5.6a.7.7,0,0,1-.7-.7c0-.3.3-.5.6-.5S129.9,1010.3,130,1010.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#424e4f&quot;/&gt;\n      &lt;/g&gt;\n    &lt;/g&gt;\n    &lt;g id=&quot;front&quot;&gt;\n      &lt;path fill=&quot;#f49123&quot; d=&quot;M55.1 73.1H76.6V92.91999999999999H55.1z&quot;/&gt;\n      &lt;path d=&quot;M136.3,1014.3h2.8s.9-.1.9,1,.1,1.8.1,1.8a.9.9,0,0,1-.8.8h-2s-1.2-.4-1.2-1.4A4,4,0,0,1,136.3,1014.3Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#ddeced&quot;/&gt;\n      &lt;rect x=&quot;54.8&quot; y=&quot;72.9&quot; width=&quot;21.2&quot; height=&quot;7.67&quot; rx=&quot;1&quot; ry=&quot;1&quot; fill=&quot;#ddeced&quot;/&gt;\n      &lt;path d=&quot;M157.1,997.9h-20c-.3,0-.5-.1-.5-.3s.2-.2.5-.2h20c.3,0,.5.1.5.3S157.4,997.9,157.1,997.9Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#636767&quot; opacity=&quot;0.41&quot;/&gt;\n      &lt;rect x=&quot;57.8&quot; y=&quot;81.5&quot; width=&quot;1.3&quot; height=&quot;6.42&quot; rx=&quot;0.7&quot; ry=&quot;0.7&quot; fill=&quot;#f2791e&quot;/&gt;\n      &lt;rect x=&quot;71.5&quot; y=&quot;81.4&quot; width=&quot;1.3&quot; height=&quot;6.42&quot; rx=&quot;0.7&quot; ry=&quot;0.7&quot; fill=&quot;#f2791e&quot;/&gt;\n      &lt;rect x=&quot;64.8&quot; y=&quot;81.5&quot; width=&quot;1.3&quot; height=&quot;6.42&quot; rx=&quot;0.7&quot; ry=&quot;0.7&quot; fill=&quot;#f2791e&quot;/&gt;\n      &lt;rect x=&quot;53.6&quot; y=&quot;71.2&quot; width=&quot;23&quot; height=&quot;1.92&quot; rx=&quot;1&quot; ry=&quot;1&quot; fill=&quot;#ddeced&quot;/&gt;\n      &lt;path fill=&quot;#a2b2b3&quot; d=&quot;M59.5 73.1H70.3V79.1H59.5z&quot;/&gt;\n      &lt;path fill=&quot;#bedb45&quot; d=&quot;M66.2 74.1H68.4V77.92999999999999H66.2z&quot;/&gt;\n      &lt;path fill=&quot;#636767&quot; d=&quot;M61.3 74H64.2V78H61.3z&quot;/&gt;\n      &lt;circle cx=&quot;62.4&quot; cy=&quot;75.6&quot; r=&quot;0.5&quot; fill=&quot;#f76f6f&quot;/&gt;\n    &lt;/g&gt;\n    &lt;g id=&quot;back&quot;&gt;\n      &lt;rect x=&quot;74.5&quot; y=&quot;71.2&quot; width=&quot;13&quot; height=&quot;1.75&quot; rx=&quot;0.9&quot; ry=&quot;0.9&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;path fill=&quot;#f2791e&quot; d=&quot;M86.3 80.4L86.3 83.1 81.2 83 76.5 87.3 76.4 80.3 86.3 80.4z&quot;/&gt;\n      &lt;path fill=&quot;#a2b2b3&quot; d=&quot;M76.4 72.1H86.30000000000001V80.6H76.4z&quot;/&gt;\n      &lt;path d=&quot;M167.9,997.7h-9.5a.3.3,0,0,1,0-.5h9.5a.3.3,0,0,1,0,.5Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#636767&quot;/&gt;\n      &lt;rect x=&quot;75.9&quot; y=&quot;73&quot; width=&quot;0.6&quot; height=&quot;19.31&quot; rx=&quot;0.3&quot; ry=&quot;0.3&quot; fill=&quot;#636767&quot; opacity=&quot;0.34&quot;/&gt;\n    &lt;/g&gt;\n    &lt;g id=&quot;forwardwheel&quot;&gt;\n      &lt;path fill=&quot;none&quot; stroke=&quot;#0c1112&quot; stroke-linecap=&quot;round&quot; stroke-miterlimit=&quot;10&quot; stroke-width=&quot;0.25&quot; d=&quot;M68.1 100.7L90.6 100.7&quot;/&gt;\n      &lt;path d=&quot;M165.8,1007.5H161s-.6-.2-1.9,1.2l-12,12.2s-1.3,2.2.3,3.3a3.8,3.8,0,0,0,3,.8h6.8Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#0c1112&quot; opacity=&quot;0.41&quot;/&gt;\n      &lt;path d=&quot;M167.9,1007.2l-4.8-.2s-.6-.2-2,1.2l-12.5,12.7s-1.4,2.3.3,3.5a3.9,3.9,0,0,0,3.1.8h7.1Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#394848&quot;/&gt;\n      &lt;path d=&quot;M170.4,1009.2s-2-4.6-6.5-.1l-11,11.2s-3.8,4.1,1.4,4.8h16.2s7.8.2,5.5-7.4Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;path d=&quot;M169.7,1010.8s-1.7-3.8-5.3-.1l-9,9.1s-3.1,3.3,1.2,3.9h13.3s6.4.1,4.6-6Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#636767&quot;/&gt;\n      &lt;path d=&quot;M173.6,1017.2l-3-1.7s-11.2.1-6,8.1h5.9Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#394848&quot; opacity=&quot;0.78&quot;/&gt;\n      &lt;path d=&quot;M165.1,1010l1.6,4.6s-1.3-.6-1.3,1.2-3.4,3.2-3.4,3.2-1.2-.3-1.4,1.2-2.6,3.4-2.6,3.4H155s-3.5-.1-.4-3h0Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#394848&quot; opacity=&quot;0.78&quot;/&gt;\n      &lt;g id=&quot;wheel&quot;&gt;\n        &lt;circle cx=&quot;85.4&quot; cy=&quot;87.6&quot; r=&quot;2.9&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;circle cx=&quot;85.4&quot; cy=&quot;87.6&quot; r=&quot;2&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;ellipse cx=&quot;85.1&quot; cy=&quot;87.6&quot; rx=&quot;1.1&quot; ry=&quot;0.8&quot; fill=&quot;#394848&quot;/&gt;\n        &lt;circle cx=&quot;85.5&quot; cy=&quot;87.6&quot; r=&quot;0.8&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;/g&gt;\n      &lt;g id=&quot;wheel-2&quot; data-name=&quot;wheel&quot;&gt;\n        &lt;circle cx=&quot;81&quot; cy=&quot;92.2&quot; r=&quot;2.9&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;circle cx=&quot;81&quot; cy=&quot;92.2&quot; r=&quot;2&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;ellipse cx=&quot;80.7&quot; cy=&quot;92.2&quot; rx=&quot;1.1&quot; ry=&quot;0.8&quot; fill=&quot;#394848&quot;/&gt;\n        &lt;circle cx=&quot;81.1&quot; cy=&quot;92.2&quot; r=&quot;0.8&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;/g&gt;\n      &lt;g id=&quot;wheel-3&quot; data-name=&quot;wheel&quot;&gt;\n        &lt;circle cx=&quot;76.7&quot; cy=&quot;96.5&quot; r=&quot;2.9&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;circle cx=&quot;76.7&quot; cy=&quot;96.5&quot; r=&quot;2&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;ellipse cx=&quot;76.4&quot; cy=&quot;96.5&quot; rx=&quot;1.1&quot; ry=&quot;0.8&quot; fill=&quot;#394848&quot;/&gt;\n        &lt;circle cx=&quot;76.8&quot; cy=&quot;96.5&quot; r=&quot;0.8&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;/g&gt;\n      &lt;g id=&quot;wheel-4&quot; data-name=&quot;wheel&quot;&gt;\n        &lt;circle cx=&quot;88.9&quot; cy=&quot;95.2&quot; r=&quot;4.1&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;circle cx=&quot;88.9&quot; cy=&quot;95.2&quot; r=&quot;2.8&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;ellipse cx=&quot;88.5&quot; cy=&quot;95.2&quot; rx=&quot;1.6&quot; ry=&quot;1.1&quot; fill=&quot;#394848&quot;/&gt;\n        &lt;circle cx=&quot;89&quot; cy=&quot;95.2&quot; r=&quot;1.1&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;/g&gt;\n    &lt;/g&gt;\n    &lt;g id=&quot;leftarm&quot;&gt;\n      &lt;g id=&quot;bicep&quot;&gt;\n        &lt;path d=&quot;M165.2,998.3H151.2a3.5,3.5,0,0,0-2.7,4.2c.4,2.3,4.4,2.4,4.4,2.4l11.9-.3s4.2.8,3.9-2.8A3.5,3.5,0,0,0,165.2,998.3Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#f2791e&quot;/&gt;\n        &lt;path d=&quot;M154.1,998.4h12.7s2.2.2,2.2,3.1c0,0,.3,2.8-1.8,3s-13.1.3-13.1.3Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#ddeced&quot;/&gt;\n        &lt;path fill=&quot;#636767&quot; d=&quot;M72.3 78L75.9 73.8 78.5 73.9 73.5 80.2 72.3 80.2 72.3 78z&quot;/&gt;\n        &lt;path fill=&quot;#636767&quot; d=&quot;M76 80.2L81.4 73.9 84 73.9 79 80.1 76 80.2z&quot;/&gt;\n        &lt;path d=&quot;M163.9,1004.5l4.3-5.4a2.6,2.6,0,0,1,.6,1.9l-2.8,3.5Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#636767&quot;/&gt;\n      &lt;/g&gt;\n      &lt;g clip-path=&quot;url(#clip-path-5)&quot;&gt;\n        &lt;path id=&quot;newleftarm&quot; d=&quot;M150.1,1000.7s-1.8-.3-2,.9,1.8,1,1.8,1l17-.2s1.1-.7.3-1.5S150.1,1000.7,150.1,1000.7Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#a2b2b3&quot;/&gt;\n      &lt;/g&gt;\n      &lt;g id=&quot;hand&quot;&gt;\n        &lt;ellipse cx=&quot;66.8&quot; cy=&quot;77.3&quot; rx=&quot;0.9&quot; ry=&quot;0.9&quot; fill=&quot;#636767&quot;/&gt;\n        &lt;path d=&quot;M146.1,998.7l4.5,4.9a.8.8,0,0,1-.3,1.1l-3.5,2.1s-.5,0-.4.8,1,1.5.1,2-5.7-2.6-5.7-2.6l-2-4.5a1.7,1.7,0,0,1,1.3-2Z&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;#a2b2b3&quot;/&gt;\n        &lt;path d=&quot;M147.2,1001.1l-4.3,1.1a1.6,1.6,0,0,0-1.1,2.1c.3,1.2,1,3.2,1,3.2&quot; transform=&quot;translate(-81.8 -924.4)&quot; fill=&quot;none&quot; stroke=&quot;#636767&quot; stroke-linecap=&quot;round&quot; stroke-miterlimit=&quot;10&quot; stroke-width=&quot;0.5&quot; opacity=&quot;0.46&quot;/&gt;\n      &lt;/g&gt;\n    &lt;/g&gt;\n    &lt;/g&gt;\n  &lt;/g&gt;\n&lt;/svg&gt;\n&lt;/div&gt;","css":"body {\n  width: 100vw;\n  height: 100vh;\n  overflow: hidden;\n  font-family: &quot;Montserrat&quot;, sans-serif;\n  background: #23a9e0;\n  cursor: url(&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/cockroach%20(2).ico&quot;), default;\n  -webkit-overflow-scrolling: touch;\n}\n\n#app {\n  -webkit-tap-highlight-color: transparent;\n}\n\nsvg {\n  width: 100vw;\n  height: 100vh;\n  max-height: 400px;\n  margin-left: 20vw;\n}\n\np {\n  font-size: 16px;\n  color: white;\n  text-align: center;\n}\n\n.isFlipped {\n  transform: scaleX(-1);\n  transform-origin: 50% 50%;\n}\n\n#leftarm {\n  transform-origin: 100% 0;\n}\n\n@media screen and (max-width: 600px) {\n  svg {\n    max-height: 200px !important;\n    margin-left: 0 !important;\n  }\n}","js":"new Vue({\n  el: &#39;#app&#39;,\n  data() {\n    return {\n      startX: 0,\n      x: 0,\n      y: 0,\n      flip: false,\n      audioPlay: false,\n      startArms: 0 };\n\n  },\n  methods: {\n    armsTL() {\n      let tl = new TimelineMax();\n      tl.add(&#39;startarms&#39;);\n      tl.to(&#39;#backhand&#39;, 2, {\n        x: -16,\n        rotation: 150,\n        transformOrigin: &#39;50% 50%&#39; },\n      &#39;startarms&#39;);\n      tl.to(&#39;#rightarm&#39;, 2, {\n        rotation: 30,\n        transformOrigin: &#39;100% 0&#39; },\n      &#39;startarms&#39;);\n      tl.to(&#39;#newrightarm&#39;, 2, {\n        x: -94,\n        y: -918,\n        rotation: 10,\n        transformOrigin: &#39;100% 100%&#39; },\n      &#39;startarms&#39;);\n\n      tl.to(&#39;#hand&#39;, 2, {\n        x: -15,\n        y: -7,\n        rotation: 90,\n        transformOrigin: &#39;50% 50%&#39; },\n      &#39;startarms&#39;);\n      tl.to(&#39;#leftarm&#39;, 2, {\n        rotation: 20,\n        transformOrigin: &#39;100% 0&#39; },\n      &#39;startarms&#39;);\n      tl.to(&#39;#newleftarm&#39;, 2, {\n        x: -100,\n        y: -924,\n        transformOrigin: &#39;100% 100%&#39; },\n      &#39;startarms&#39;);\n\n      return tl;\n    },\n    coordinates(e) {\n      const audio = new Audio(&#39;https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/Whoa.mp3&#39;),\n      walleBox = document.getElementById(&#39;walle&#39;).getBoundingClientRect(),\n      walleCoords = walleBox.width / 2 + walleBox.left;\n\n      if (this.startArms == 0) {\n        this.startArms = this.armsTL();\n      }\n\n      this.y = e.clientY / 80 - 2;\n      if (e.clientX &gt; walleCoords) {\n        this.x = -(e.clientX / 200);\n        this.flip = true;\n        if (this.audioPlay === false) {\n          audio.play();\n          this.audioPlay = true;\n        }\n      } else {\n        this.audioPlay = false;\n        this.x = e.clientX / 200 - 5;\n        this.flip = false;\n\n        TweenMax.set(&quot;#righteyeb2&quot;, {\n          scaleX: 1 + (1 - e.clientX / walleCoords) / 5 });\n\n        TweenMax.set(&quot;#lefteyeb2&quot;, {\n          scaleX: 1 + (1 - e.clientX / walleCoords) / 5 });\n\n        TweenMax.set(&quot;#walle&quot;, {\n          x: e.clientX / walleCoords * 50 - 40 });\n\n\n        this.startArms.progress(1 - e.clientX / walleCoords).pause();\n\n      }\n    } },\n\n  mounted() {\n    let tl = new TimelineMax({\n      repeat: -1,\n      repeatDelay: 2 });\n\n\n    tl.add(&#39;redo&#39;);\n    tl.to(&#39;#lefteye&#39;, 0.5, {\n      rotation: 5,\n      repeat: 3,\n      yoyo: true,\n      transformOrigin: &#39;100% 50%&#39;,\n      ease: Sine.easeOut },\n    &#39;redo&#39;);\n    tl.to(&#39;#righteye&#39;, 0.5, {\n      rotation: -5,\n      repeat: 3,\n      yoyo: true,\n      transformOrigin: &#39;0% 30%&#39;,\n      ease: Sine.easeOut },\n    &#39;redo+=0&#39;);\n    tl.fromTo(&#39;#lefteyeball&#39;, 0.05, {\n      scaleY: 1 },\n    {\n      scaleY: 0,\n      repeat: 3,\n      yoyo: true,\n      transformOrigin: &#39;50% 50%&#39;,\n      ease: Circ.easeOut },\n    &#39;redo+=4&#39;);\n    tl.fromTo(&#39;#righteyeball&#39;, 0.05, {\n      scaleY: 1 },\n    {\n      scaleY: 0,\n      repeat: 3,\n      yoyo: true,\n      transformOrigin: &#39;50% 50%&#39;,\n      ease: Circ.easeOut },\n    &#39;redo+=4&#39;);\n    tl.to(&#39;#eyecontain&#39;, 0.4, {\n      rotation: -15,\n      repeat: 1,\n      yoyo: true,\n      transformOrigin: &#39;50% 50%&#39;,\n      ease: Sine.easeInOut },\n    &#39;redo+=2&#39;);\n  } });\n\n\nTweenMax.to(&#39;p&#39;, 0.5, {\n  opacity: 0,\n  delay: 2,\n  ease: Sine.easeIn });"};
+    __preprocessors = {
+      "html": "none",
+      "css": "scss",
+      "js": "babel"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "SCSS",
+      "js": "Babel"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-b0782d505bcecbe52b6e80fa7accfeb37eadcf49c482388469aacfd9aec72be4.js.descarga"></script>
+
+
+</body></html>

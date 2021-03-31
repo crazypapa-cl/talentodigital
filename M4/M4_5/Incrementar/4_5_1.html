@@ -1,0 +1,24 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M4_5_1</title>
+    </head>
+<body>
+   <h1>Actividad de aprendizaje 5: v-bind M4_5_1</h1>
+   <p>Realice una página con un botón que muestre la hora actual cada vez que se haga click.
+    </p>
+<div id="app" class="sandbox" style="text-align: center;">
+<button v-on:click="contar">CONTAR</button>
+<p>El contador  incrementa en </p>
+<span style="font-size: 40px; font-family: Helvetica, sans-serif;">{{contador}}</span>
+
+<span v-html="boton"></span>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="M4_5_1.js">
+</script>
+</html>
