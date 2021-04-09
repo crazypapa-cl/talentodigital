@@ -1,0 +1,26 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M4_7_2</title>
+    </head>
+<body>
+   <h1>Actividad de aprendizaje 7: Evento submit</h1>
+<div id="form" class="sandbox" style="text-align: center;" >
+   <form v-on:submit.prevent >
+   <input type="text" name="Nombre" placeholder="NOMBRE" v-model="nombre" v-bind:class="{error : formNombre}">
+   <input type="text" name="Edad" placeholder="EDAD" v-model="edad" v-bind:class="{erro : formEdad}">
+   <input type="submit" value="VALIDAR" class="btn" v-on:click="validar">
+   <div class="globo" >{{globo}}</div>
+   </form>
+
+   
+  
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="4_7_2.js">
+</script>
+</html>

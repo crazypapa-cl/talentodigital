@@ -1,0 +1,32 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M4_8_1</title>
+    </head>
+<body>
+   <h1>Actividad de aprendizaje 8: radio button</h1>
+   <p>
+      1) Crear un formulario con 2 controles de entrada (input) numericos que permitan ingresar 2 numeros y mediante 2 controles de tipo radio, seleccionar si queremos sumar o restar. Al presionar el botón mostrar el resultado.</p>
+<div id="form" class="sandbox" style="text-align: center;" >
+   <form v-on:submit.prevent >
+   <input type="text" v-model="valor1">
+   <label>Valor 1</label>
+   <input type="text" v-model="valor2">
+   <label>Valor 2</label>
+   <input type="radio" name="sumar" placeholder="sumar"  value="Sumar" v-model="radio" >
+   <input type="radio" name="restar" placeholder="restar" value="Restar"  v-model="radio">
+   <input type="submit" value="VALIDAR" class="btn" v-on:click="sumar">
+   <div class="globo" >{{globo}}</div>
+   </form>
+
+   
+  
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="4_8_1.js">
+</script>
+</html>

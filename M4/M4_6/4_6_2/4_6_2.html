@@ -1,0 +1,28 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <title>M4_6_2</title>
+    </head>
+<body>
+   <h1>Actividad de aprendizaje 6: v-model y computed - M4-6-2</h1>
+   <p>
+    Observe con detención el video carepalo.mp4
+    </p>
+<div id="app" class="sandbox" style="text-align: center;">
+    <p>Nombre:</p>
+<input type="text" name="nombre" placeholder="Nombre" v-model='nombre'>
+<p>Sueldo Base:</p>
+    <input type="text" name="nombre" placeholder="Appellido" v-model="sueldo" v-on:keyup="AFP">
+<p>Estimado Pepito, despúes de aplicar el 10% de AFP y 7% de salud su sueldo final es de:  </p>
+<div>
+<p style="font-size: 40px;"> {{AFP()}}</p>
+</div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="4_6_2.js">
+</script>
+</html>
