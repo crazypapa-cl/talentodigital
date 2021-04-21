@@ -31,22 +31,6 @@ img {
     max-width: 600px;
 }
 
-.btn{
-    height: 60px;
-    width: 300px;
-    background-color: yellow;
-    font-size: 32px;
-    list-style: none;
-    border-style: none;
-    border-radius: 6px;
-    margin-top: 30px;
-}
-
-input{
-    height: 50px;
-    width: 100%;
-}
-
 .error{
     border: solid  red;
     color: red;
@@ -55,3 +39,9 @@ input{
 .globo {
     margin-top:36px;
 }
+
+img {
+    max-width: 100px;
+}
+
+
