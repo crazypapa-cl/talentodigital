@@ -1,0 +1,64 @@
+/*
+=============================================================================
+Estilos específicos de la página Inicio del Sitio Web.
+=============================================================================
+*/
+
+/* Estilos de la Sección de Productos */
+
+#seccion-productos {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#bloque-descripcion-productos {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#bloque-galeria-productos {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.columnaGaleriaProductos {
+    padding: 10px;
+    width: 45%;
+}
+
+.columnaGaleriaProductos > img {
+    box-sizing: border-box;
+    width: 100%;
+    border: 5px ridge goldenrod;
+    border-radius: 10px;
+}
+
+/* Cambios de estilos para tamaño de ventana de Móviles: ancho mínimo = 768px */
+
+@media (min-width: 768px) {
+    .columnaGaleriaProductos {
+        width: 30%;
+    }
+}
+
+/* Cambios de estilos para tamaño de ventana de Computadores de Pantalla Pequeña: ancho mínimo = 1024px */
+
+@media (min-width: 1024px) {
+    .columnaGaleriaProductos {
+        width: 20%;
+    }
+}
+
+/* Cambios de estilos para tamaño de ventana de Computadores de Pantalla Media y Grande: ancho mínimo = 1280px */
+
+@media (min-width: 1280px) {
+    .columnaGaleriaProductos {
+        width: 18%;
+    }
+}

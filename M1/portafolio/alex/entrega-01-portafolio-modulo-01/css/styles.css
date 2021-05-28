@@ -1,0 +1,165 @@
+/* Estilo Generales */
+body {
+    background-color: palegreen;
+    font-family: serif;
+}
+
+.tituloNivel01, .tituloNivel02, .tituloNivel03 {
+    font-family: 'Bree Serif', serif;
+    color: darkgreen;
+}
+
+.contenido {
+    font-family: 'Playfair Display', serif;
+    font-size: 12pt;
+    color: green;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.enlace {
+    font-family: 'Vidaloka', serif;
+    font-style: italic;
+    font-size: 12pt;
+    color: green;
+    text-decoration: none;
+}
+
+/* El ancho total de la página es el 100% del ancho del navegador con un máximo de 1280px */
+.contenedor {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.tituloNivel01 {
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+.tituloNivel02 {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.tituloNivel03 {
+    font-size: 18pt;
+    font-style: italic;
+}
+
+/* Estilos de la Cabecera */
+
+#bloque-imagen-cabecera {
+    text-align: center;
+}
+
+#imagen-cabecera {
+    width: 100%;
+}
+
+#bloque-titulo-cabecera {
+    text-align: center;
+
+}
+
+/* Estilos de la Barra de Navegación */
+
+nav {
+    background-color: green;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul a {
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Arvo', serif;
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos de la Sección Principal del Inicio */
+
+#seccion-inicio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#seccion-inicio table {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#seccion-inicio img {
+    width: 200px;
+    border: 5px outset goldenrod;
+    border-radius: 10px;
+}
+
+#seccion-inicio article {
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Estilos del Pie de Página */
+
+footer {
+    background-color: limegreen;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 12pt;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.info-contacto {
+    margin-bottom: 10px;
+}
+
+.info-direccion {
+    margin-right: 20px;
+}
+
+.info-telefono {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-telefono a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.info-rrss {
+    margin-left: 20px;
+}
+
+.imagen-logo-rrss {
+    width: 25px;
+}
+
+.info-requisitos {
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+.info-creador {
+    font-size: 10pt;
+}

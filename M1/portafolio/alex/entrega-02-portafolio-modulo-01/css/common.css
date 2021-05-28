@@ -1,0 +1,342 @@
+/*
+=============================================================================
+Estilos comunes compartidos por todas las páginas del Sitio Web.
+=============================================================================
+*/
+
+/* Estilos Generales */
+
+body {
+    background-color: palegreen;
+    font-family: serif;
+}
+
+.tituloNivel01, .tituloNivel02, .tituloNivel03 {
+    font-family: 'Bree Serif', serif;
+    color: darkgreen;
+}
+
+.tituloNivel01 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tituloNivel02 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.tituloNivel03 {
+    font-size: 21px;
+    font-style: italic;
+}
+
+.contenido {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: darkgreen;
+}
+
+.pie01, .pie02 {
+    font-family: 'Playfair Display', serif;
+    color: darkgreen;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pie01 {
+    font-size: 13px;
+}
+
+.pie02 {
+    font-size: 10px;
+    text-align: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.enlace {
+    font-family: 'Vidaloka', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+/* El ancho total de la página es el 100% del ancho del navegador. */
+.contenedor {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Estilos de la Cabecera */
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bloque-texto-cabecera {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloque-imagen-cabecera {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloque-imagen-cabecera > img {
+    box-sizing: border-box;
+    width: 100%;
+    border: 5px outset goldenrod;
+    border-radius: 5px;
+}
+
+/* Estilos del Contenido Principal */
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de la Barra de Navegación */
+
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav > .opcionNav {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Arvo', serif;
+    font-size: 13px;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .opcionNav:hover {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+nav > .opcionNav > a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav > .opcionNav > a:hover {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#opcion-nav-inicio, #opcion-nav-quienes-somos, #opcion-nav-productos {
+    margin-right: 0px;
+    margin-bottom: 2px;
+}
+
+/* Estilos del Link Volver Arriba */
+
+#link-volver-arriba {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos del Pie de Página */
+
+footer {
+    box-sizing: border-box;
+    background-color: limegreen;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-contacto {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5px;
+    border-bottom: 2px solid darkgreen;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.info-direccion {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+    order: 1;
+}
+
+.info-telefono {
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    order: 2;
+}
+
+.info-telefono a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.info-rrss {
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info-rrss > * {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.imagen-logo-rrss {
+    width: 25px;
+}
+
+.info-requisitos {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-requisitos > .info-requisitos-resolucion {
+    width: 100%;
+}
+
+.info-requisitos > .info-requisitos-navegador {
+    width: 100%;
+}
+
+.info-creador {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* Cambios de estilos para tamaño de ventana de Móviles: ancho mínimo = 768px */
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+
+    #bloque-texto-cabecera {
+        width: 50%;
+    }
+
+    #bloque-imagen-cabecera {
+        width: 50%;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav > .opcionNav {
+        width: 30%;
+    }
+
+    #opcion-nav-inicio, #opcion-nav-quienes-somos, #opcion-nav-productos {
+        margin-right: 2px;
+        margin-bottom: 0px;
+    }
+
+    .info-direccion {
+        width: calc(100% / 3);
+        order: 2;
+    }
+
+    .info-telefono {
+        width: calc(100% / 3);
+        order: 1;
+    }
+
+    .info-rrss {
+        width: calc(100% / 3);
+        order: 3;
+    }
+
+    .info-requisitos {
+        flex-direction: row;
+    }
+
+    .info-requisitos > .info-requisitos-resolucion {
+        width: 50%;
+        text-align: right;
+    }
+    
+    .info-requisitos > .info-requisitos-navegador {
+        width: 50%;
+        text-align: left;
+    }
+}
+
+/* Cambios de estilos para tamaño de ventana de Computadores de Pantalla Pequeña: ancho mínimo = 1024px */
+
+@media (min-width: 1024px) {
+    #bloque-texto-cabecera {
+        width: 40%;
+    }
+
+    #bloque-imagen-cabecera {
+        width: 60%;
+    }
+}
+
+/* Cambios de estilos para tamaño de ventana de Computadores de Pantalla Media y Grande: ancho mínimo = 1280px */
+
+@media (min-width: 1280px) {
+    #bloque-texto-cabecera {
+        width: 30%;
+    }
+
+    #bloque-imagen-cabecera {
+        width: 70%;
+    }
+}

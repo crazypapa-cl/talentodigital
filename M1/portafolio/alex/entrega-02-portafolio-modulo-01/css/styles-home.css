@@ -1,0 +1,91 @@
+/*
+=============================================================================
+Estilos específicos de la página Inicio del Sitio Web.
+=============================================================================
+*/
+
+/* Estilos de la Sección de Inicio */
+
+#seccion-inicio {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filaInicio {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.columnaInicio {
+    box-sizing: border-box;
+}
+
+.columnaInicio.columnaImagenInicio {
+    width: 30%;
+}
+
+.columnaInicio.columnaImagenInicio > img {
+    box-sizing: border-box;
+    width: 100%;
+    border: 5px outset goldenrod;
+    border-radius: 10px;
+}
+
+.columnaInicio.columnaTextoInicio {
+    width: 70%;
+}
+
+.columnaInicio.columnaTextoInicio > div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 10px 10px 10px;
+    text-align: justify;
+}
+
+/* Cambios de estilos para tamaño de ventana de Móviles: ancho mínimo = 768px */
+
+@media (min-width: 768px) {
+    .columnaInicio.columnaImagenInicio {
+        width: 15%;
+    }
+
+    .columnaInicio.columnaTextoInicio {
+        width: 85%;
+    }
+}
+
+/* Cambios de estilos para tamaño de ventana de Computadores de Pantalla Pequeña: ancho mínimo = 1024px */
+
+@media (min-width: 1024px) {
+    #seccion-inicio {
+        flex-direction: row;
+    }
+
+    .filaInicio {
+        width: calc(100% / 3);
+    }
+
+    .columnaInicio.columnaImagenInicio {
+        width: 40%;
+    }
+
+    .columnaInicio.columnaTextoInicio {
+        width: 60%;
+    }
+}
+
+/* Cambios de estilos para tamaño de ventana de Computadores de Pantalla Media y Grande: ancho mínimo = 1280px */
+
+@media (min-width: 1280px) {
+    .columnaInicio.columnaImagenInicio {
+        width: 23%;
+    }
+
+    .columnaInicio.columnaTextoInicio {
+        width: 77%;
+    }
+}
