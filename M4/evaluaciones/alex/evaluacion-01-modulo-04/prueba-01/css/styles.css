@@ -1,0 +1,9 @@
+/* Clase CSS imagen, para la imagen a cargar según la sección realizada. */
+.imagen {
+    width: 500px;
+}
+
+/* Clase CSS texto, para el texto a cargar según la sección realizada. */
+.texto {
+    font-size: 18px;
+}

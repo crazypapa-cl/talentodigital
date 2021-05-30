@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3: Prueba N° 2 | Sistema de Inventario</title>
+</head>
+
+<body>
+    <h1>Ingreso de Productos</h1>
+    <form id="formularioIngresarProducto" action="" onsubmit="return false">
+        <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" autofocus>
+        </div>
+        <div>
+            <label for="valor">Valor:</label><br>
+            <input type="text" id="valor">
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label><br>
+            <input type="text" id="cantidad">
+        </div>
+        <br>
+        <div>
+            <button type="submit" onclick="ingresarProductoClick()">Ingresar</button>
+        </div>
+        <div id="mensaje"></div>
+    </form>
+    <br>
+    <hr><br>
+    <div>
+        <button type="button" onclick="listarProductosClick()">Listar Productos</button>
+        <br>
+        <h1>Lista de Productos</h1>
+        <div id="lista"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

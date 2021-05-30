@@ -1,0 +1,45 @@
+/* Main de Página Inicio */
+
+/* ====== TAMAÑO DE DISPOSITIVO: MÓVILES ====== */
+
+#bloque-imagen-01 {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+#imagen-01 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#texto-01 {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+
+#texto-01 .contenido {
+    font-size: 20px;
+    color: #f5dabf;
+    transition: font-size 1s;
+}
+
+/* ====== TAMAÑO DE DISPOSITIVO: TABLETS ====== */
+
+@media (min-width: 768px) {
+    #texto-01 .contenido {
+        font-size: 26px;
+    }
+}
+
+/* ====== TAMAÑO DE DISPOSITIVO: COMPUTADORES ====== */
+
+@media (min-width: 1024px) {
+    #texto-01 .contenido {
+        font-size: 30px;
+    }
+}

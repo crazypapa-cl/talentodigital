@@ -1,0 +1,10 @@
+/* Clase CSS bloqueImagen, para el bloque que contiene una imagen a cargar. */
+.bloqueImagen {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Clase CSS imagen, para una imagen a cargar. */
+.imagen {
+    width: 100%;
+}

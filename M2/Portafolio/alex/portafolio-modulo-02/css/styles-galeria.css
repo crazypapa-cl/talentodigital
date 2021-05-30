@@ -1,0 +1,32 @@
+/* Main de Página Galería */
+
+/* ====== TAMAÑO DE DISPOSITIVO: MÓVILES ====== */
+
+.galeriaImagenes {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen {
+    box-sizing: border-box;
+    position: relative;
+    width: 40%;
+    transition: width 1s;
+}
+
+/* ====== TAMAÑO DE DISPOSITIVO: TABLETS ====== */
+
+@media (min-width: 768px) {
+    .imagen {
+        width: 30%;
+    }
+}
+
+/* ====== TAMAÑO DE DISPOSITIVO: COMPUTADORES ====== */
+
+@media (min-width: 1024px) {
+    .imagen {
+        width: 20%;
+    }
+}

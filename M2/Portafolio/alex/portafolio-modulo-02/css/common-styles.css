@@ -1,0 +1,348 @@
+/* ====== ESTILOS GENERALES ====== */
+
+body {
+    background-color: black;
+    font-family: 'Caveat', cursive;
+    color: #f5dabf
+}
+
+.titulo {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.contenido {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.enlace {
+    text-decoration: none;
+}
+
+/* ====== TAMAÑO DE DISPOSITIVO: MÓVILES ====== */
+
+/* Contenedor */
+
+.contenedor {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+header .tituloPrincipal {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    transition: justify-content 1s;
+}
+
+#texto01-titulo-principal, #texto02-titulo-principal {
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 30px;
+    color: #f5dabf;
+    text-align: center;
+    transition: width 1s, font-size 1s;
+}
+
+header .imagenPrincipal {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header .imagenPrincipal img {
+    width: 100%;
+}
+
+header .info {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: justify-content 1s;
+}
+
+header .info img {
+    width: 20px;
+}
+
+header .info span {
+    font-size: 16px;
+    color: #f5dabf;
+    transition: font-size 1s;
+}
+
+header .info .correo {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s;
+}
+
+header .info .rrss {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s;
+}
+
+header .info .correo .icono-correo, header .info .rrss .icono-instagram, header .info .rrss .icono-facebook, header .info .rrss .icono-twitter {
+    margin-right: 7px;
+}
+
+/* Menú Principal */
+
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav .menu {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav .menu .item {
+    box-sizing: border-box;
+    background-color: #f5dabf;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav .menu .item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ce6f82;
+    transition: font-size 1s;
+}
+
+nav .menu .item:hover {
+    background-color: #ce6f82;
+}
+
+nav .menu .item:hover span {
+    color: #f5dabf;
+}
+
+#item-home, #item-acerca, #item-biografia, #item-discografia, #item-videos, #item-contacto {
+    width: calc(100% / 3);
+    transition: width 1s;
+    order: 1;
+}
+
+#item-fotos {
+    width: 100%;
+    transition: width 1s;
+    order: 2;
+}
+/* Main */
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 50px;
+    transition: margin-bottom 1s;
+}
+
+.tituloPagina {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 30px;
+    color: #f5dabf;
+    text-align: center;
+}
+
+.contenidoPagina {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 50px;
+}
+
+/* Footer */
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer img {
+    width: 15px;
+}
+
+footer span {
+    font-size: 16px;
+    color: #f5dabf;
+    transition: font-size 1s;
+}
+
+footer .correo {
+    box-sizing: border-box;
+    width: 50%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s, order 1s;
+}
+
+footer .rrss {
+    box-sizing: border-box;
+    width: 50%;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s, order 1s;
+}
+
+footer .correo .icono-correo, footer .rrss .icono-instagram, footer .rrss .icono-facebook, footer .rrss .icono-twitter {
+    margin-right: 7px;
+}
+
+footer .creador {
+    box-sizing: border-box;
+    width: 100%;
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s;
+}
+
+/* ====== TAMAÑO DE DISPOSITIVO: TABLETS ====== */
+
+@media (min-width: 768px) {
+    /* Header */
+
+    header .tituloPrincipal {
+        justify-content: center;
+    }
+
+    #texto01-titulo-principal, #texto02-titulo-principal {
+        width: 35%;
+        font-size: 35px;
+    }
+
+    header .info {
+        justify-content: center;
+    }
+
+    header .info span {
+        font-size: 22px;
+    }
+
+    header .info .correo, header .info .rrss {
+        width: 30%;
+    }
+
+    /* Menú Principal */
+
+    nav .menu .item span {
+        font-size: 22px;
+    }
+
+    #item-home, #item-acerca, #item-biografia, #item-discografia, #item-fotos, #item-videos, #item-contacto {
+        width: calc(100% / 7);
+        order: 1;
+    }
+
+    /* Main */
+
+    main {
+        margin-bottom: 30px;
+    }
+
+    /* Footer */
+
+    footer span {
+        font-size: 22px;
+    }
+
+    footer .correo {
+        width: calc(100% / 3);
+        order: 1;
+    }
+
+    footer .rrss {
+        width: calc(100% / 3);
+        order: 3;
+    }
+
+    footer .creador {
+        width: calc(100% / 3);
+        order: 2;
+    }
+}
+
+/* ====== TAMAÑO DE DISPOSITIVO: COMPUTADORES ====== */
+
+@media (min-width: 1024px) {
+    /* Header */
+
+    #texto01-titulo-principal, #texto02-titulo-principal {
+        width: 40%;
+        font-size: 40px;
+    }
+
+    header .info span {
+        font-size: 26px;
+    }
+
+    header .info .correo, header .info .rrss {
+        width: 40%;
+    }
+
+    /* Menú Principal */
+
+    nav .menu .item span {
+        font-size: 26px;
+    }
+
+    /* Main */
+
+    main {
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+
+    footer span {
+        font-size: 26px;
+    }
+}

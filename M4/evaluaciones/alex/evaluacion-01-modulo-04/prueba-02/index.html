@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación 1 - Prueba 2 | Módulo 4</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Elemento HTML de la app Vue -->
+    <div id="app">
+        <!-- Bloque del formulario -->
+        <div>
+            <!-- Formulario -->
+            <form>
+                <!-- Para cada imagen de la lista de imágenes, generar un campo checkbox para seleccionarla,
+                vinculado al dato imagenesSeleccionadas y cuyo valor es el objeto de la imagen misma. -->
+                <template v-for="imagen of imagenes">
+                    <input type="checkbox" v-model="imagenesSeleccionadas" :value="imagen">
+                </template>
+            </form>
+        </div>
+        <br>
+
+        <!-- Bloque de la imagen a mostrar -->
+        <div>
+            <!-- Para cada imagen de la lista de imágenes seleccionadas, generar un bloque
+            en el que se muestra la imagen misma, usando un elemento img. -->
+            <template v-for="imagen of imagenesSeleccionadas">
+                <div class="bloqueImagen">
+                    <img :src="imagen.ruta" :alt="imagen.descripcion" :title="imagen.descripcion" class="imagen">
+                </div>
+            </template>
+        </div>
+    </div>
+    <!-- Referencias JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

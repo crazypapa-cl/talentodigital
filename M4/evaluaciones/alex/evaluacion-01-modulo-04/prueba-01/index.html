@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación 1 - Prueba 1 | Módulo 4</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Elemento HTML de la app Vue -->
+    <div id="app">
+        <!-- Bloque del formulario -->
+        <div>
+            <!-- Formulario -->
+            <form>
+                <!-- Campo select vinculado al dato de la imagen seleccionada -->
+                <select v-model="imagenSeleccionada">
+                    <!-- Para cada imagen de la lista de imágenes, generar una opción del select
+                    cuyo texto sea la propiedad nombre y el valor sea la propiedad valor. -->
+                    <template v-for="imagen of imagenes">
+                        <option :value="imagen.valor">{{imagen.nombre}}</option>
+                    </template>
+                </select>
+            </form>
+        </div>
+        <br>
+
+        <!-- Bloque de la imagen a mostrar -->
+        <div>
+            <!-- Elemento img para mostrar la imagen selecciondada. -->
+            <img :src="rutaImagen" :alt="descripcionImagen" :title="descripcionImagen" class="imagen">
+        </div>
+        <br>
+
+        <!-- Bloque del nombre y descripción a mostrar -->
+        <div>
+            <!-- Elemento span para mostrar el nombre y descripción de la imagen selecciondada,
+            en caso que se seleccione alguna opción del select anterior. -->
+            <template v-if="imagenSeleccionada != ''">
+                <span class="texto">{{nombreImagen}}: {{descripcionImagen}}</span>
+            </template>
+        </div>
+    </div>
+
+    <!-- Referencias JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
