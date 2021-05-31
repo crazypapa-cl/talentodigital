@@ -1,4 +1,4 @@
-/* Tecnica de maquetación FLOAT*/
+/* Técnica de maquetación FLOAT */
 .floatl{float: left;}
 .floatr{float:right;}
 .clear, .clear::after, .clear::before {clear: both;}
@@ -6,7 +6,8 @@
     content: " ";
     display: block;
 }
-/* Técnica dispaly : inline block*/
+
+/* Técnica de display: inline-block */
 .i-b { display: inline-block;}
 .v-baseline { vertical-align: baseline;}
 .v-botton {vertical-align: bottom;}
@@ -14,6 +15,6 @@
 .v-top {vertical-align: top;}
 .f0 { font-size: 0;}
 
-/* Técnica Flex-box*/
+/* Técnica Flexbox */
 .flex { display: flex;}
 .flex-item { flex: none;}
